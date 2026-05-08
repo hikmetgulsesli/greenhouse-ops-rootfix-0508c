@@ -1,0 +1,1364 @@
+[
+  {
+    "screenId": "1cd5bf7dc5814c6eb502b3617dc25477",
+    "screenTitle": "Equipment Status",
+    "deviceType": "DESKTOP",
+    "elements": [
+      {
+        "type": "link",
+        "label": "dashboard",
+        "href": "#",
+        "line": 197
+      },
+      {
+        "type": "link",
+        "label": "Task Board",
+        "href": "#",
+        "line": 203
+      },
+      {
+        "type": "link",
+        "label": "Equipment",
+        "href": "#",
+        "line": 210
+      },
+      {
+        "type": "link",
+        "label": "Logs",
+        "href": "#",
+        "line": 216
+      },
+      {
+        "type": "button",
+        "label": "Create Task",
+        "line": 224
+      },
+      {
+        "type": "button",
+        "label": "sync",
+        "line": 240
+      },
+      {
+        "type": "button",
+        "label": "account_circle",
+        "line": 243
+      },
+      {
+        "type": "button",
+        "label": "All Systems",
+        "line": 253
+      },
+      {
+        "type": "button",
+        "label": "Healthy",
+        "line": 256
+      },
+      {
+        "type": "button",
+        "label": "Warning",
+        "line": 259
+      },
+      {
+        "type": "button",
+        "label": "Critical",
+        "line": 262
+      },
+      {
+        "type": "input",
+        "label": "Search equipment...",
+        "inputType": "text",
+        "placeholder": "Search equipment...",
+        "line": 238
+      }
+    ],
+    "navigation": [
+      {
+        "type": "link",
+        "label": "dashboard",
+        "href": "#",
+        "line": 197
+      },
+      {
+        "type": "link",
+        "label": "Task Board",
+        "href": "#",
+        "line": 203
+      },
+      {
+        "type": "link",
+        "label": "Equipment",
+        "href": "#",
+        "line": 210
+      },
+      {
+        "type": "link",
+        "label": "Logs",
+        "href": "#",
+        "line": 216
+      }
+    ],
+    "buttons": [
+      {
+        "type": "button",
+        "label": "Create Task",
+        "line": 224
+      },
+      {
+        "type": "button",
+        "label": "sync",
+        "line": 240
+      },
+      {
+        "type": "button",
+        "label": "account_circle",
+        "line": 243
+      },
+      {
+        "type": "button",
+        "label": "All Systems",
+        "line": 253
+      },
+      {
+        "type": "button",
+        "label": "Healthy",
+        "line": 256
+      },
+      {
+        "type": "button",
+        "label": "Warning",
+        "line": 259
+      },
+      {
+        "type": "button",
+        "label": "Critical",
+        "line": 262
+      }
+    ],
+    "inputs": [
+      {
+        "type": "input",
+        "label": "Search equipment...",
+        "inputType": "text",
+        "placeholder": "Search equipment...",
+        "line": 238
+      }
+    ],
+    "hardcodedData": [],
+    "totalInteractive": 12,
+    "requiresRouter": false,
+    "requiresDragDrop": false
+  },
+  {
+    "screenId": "ec39ccca12b54b468545e616fa2311d8",
+    "screenTitle": "Maintenance Log",
+    "deviceType": "DESKTOP",
+    "elements": [
+      {
+        "type": "link",
+        "label": "dashboard",
+        "href": "#",
+        "line": 139
+      },
+      {
+        "type": "link",
+        "label": "Task Board",
+        "href": "#",
+        "line": 145
+      },
+      {
+        "type": "link",
+        "label": "Equipment",
+        "href": "#",
+        "line": 151
+      },
+      {
+        "type": "link",
+        "label": "Logs",
+        "href": "#",
+        "line": 157
+      },
+      {
+        "type": "button",
+        "label": "sync",
+        "line": 119
+      },
+      {
+        "type": "button",
+        "label": "account_circle",
+        "line": 122
+      },
+      {
+        "type": "button",
+        "label": "Create Task",
+        "line": 133
+      },
+      {
+        "type": "button",
+        "label": "Filter",
+        "line": 172
+      },
+      {
+        "type": "button",
+        "label": "Export CSV",
+        "line": 181
+      },
+      {
+        "type": "button",
+        "label": "chevron_left",
+        "line": 287
+      },
+      {
+        "type": "button",
+        "label": "1",
+        "line": 290
+      },
+      {
+        "type": "button",
+        "label": "2",
+        "line": 291
+      },
+      {
+        "type": "button",
+        "label": "3",
+        "line": 292
+      },
+      {
+        "type": "button",
+        "label": "29",
+        "line": 294
+      },
+      {
+        "type": "button",
+        "label": "chevron_right",
+        "line": 295
+      },
+      {
+        "type": "input",
+        "label": "Search logs...",
+        "inputType": "text",
+        "placeholder": "Search logs...",
+        "line": 117
+      }
+    ],
+    "navigation": [
+      {
+        "type": "link",
+        "label": "dashboard",
+        "href": "#",
+        "line": 139
+      },
+      {
+        "type": "link",
+        "label": "Task Board",
+        "href": "#",
+        "line": 145
+      },
+      {
+        "type": "link",
+        "label": "Equipment",
+        "href": "#",
+        "line": 151
+      },
+      {
+        "type": "link",
+        "label": "Logs",
+        "href": "#",
+        "line": 157
+      }
+    ],
+    "buttons": [
+      {
+        "type": "button",
+        "label": "sync",
+        "line": 119
+      },
+      {
+        "type": "button",
+        "label": "account_circle",
+        "line": 122
+      },
+      {
+        "type": "button",
+        "label": "Create Task",
+        "line": 133
+      },
+      {
+        "type": "button",
+        "label": "Filter",
+        "line": 172
+      },
+      {
+        "type": "button",
+        "label": "Export CSV",
+        "line": 181
+      },
+      {
+        "type": "button",
+        "label": "chevron_left",
+        "line": 287
+      },
+      {
+        "type": "button",
+        "label": "1",
+        "line": 290
+      },
+      {
+        "type": "button",
+        "label": "2",
+        "line": 291
+      },
+      {
+        "type": "button",
+        "label": "3",
+        "line": 292
+      },
+      {
+        "type": "button",
+        "label": "29",
+        "line": 294
+      },
+      {
+        "type": "button",
+        "label": "chevron_right",
+        "line": 295
+      }
+    ],
+    "inputs": [
+      {
+        "type": "input",
+        "label": "Search logs...",
+        "inputType": "text",
+        "placeholder": "Search logs...",
+        "line": 117
+      }
+    ],
+    "hardcodedData": [],
+    "totalInteractive": 16,
+    "requiresRouter": false,
+    "requiresDragDrop": false
+  },
+  {
+    "screenId": "196b9bdfb93a4e94a3902d8f815b79e7",
+    "screenTitle": "Profile Panel",
+    "deviceType": "DESKTOP",
+    "elements": [
+      {
+        "type": "link",
+        "label": "dashboard",
+        "href": "#",
+        "line": 125
+      },
+      {
+        "type": "link",
+        "label": "Task Board",
+        "href": "#",
+        "line": 129
+      },
+      {
+        "type": "link",
+        "label": "Equipment",
+        "href": "#",
+        "line": 133
+      },
+      {
+        "type": "link",
+        "label": "Logs",
+        "href": "#",
+        "line": 137
+      },
+      {
+        "type": "button",
+        "label": "Create Task",
+        "line": 120
+      },
+      {
+        "type": "button",
+        "label": "sync",
+        "line": 153
+      },
+      {
+        "type": "button",
+        "label": "account_circle",
+        "line": 156
+      },
+      {
+        "type": "button",
+        "label": "Close Profile Panel",
+        "line": 201
+      },
+      {
+        "type": "button",
+        "label": "Edit Avatar",
+        "line": 211
+      },
+      {
+        "type": "button",
+        "label": "Toggle Email Notifications",
+        "line": 231
+      },
+      {
+        "type": "button",
+        "label": "Toggle Push Notifications",
+        "line": 243
+      },
+      {
+        "type": "button",
+        "label": "Toggle SMS Alerts",
+        "line": 258
+      },
+      {
+        "type": "button",
+        "label": "Manage Account Settings",
+        "line": 265
+      },
+      {
+        "type": "button",
+        "label": "logout",
+        "line": 273
+      },
+      {
+        "type": "input",
+        "label": "Search operations...",
+        "inputType": "text",
+        "placeholder": "Search operations...",
+        "line": 150
+      }
+    ],
+    "navigation": [
+      {
+        "type": "link",
+        "label": "dashboard",
+        "href": "#",
+        "line": 125
+      },
+      {
+        "type": "link",
+        "label": "Task Board",
+        "href": "#",
+        "line": 129
+      },
+      {
+        "type": "link",
+        "label": "Equipment",
+        "href": "#",
+        "line": 133
+      },
+      {
+        "type": "link",
+        "label": "Logs",
+        "href": "#",
+        "line": 137
+      }
+    ],
+    "buttons": [
+      {
+        "type": "button",
+        "label": "Create Task",
+        "line": 120
+      },
+      {
+        "type": "button",
+        "label": "sync",
+        "line": 153
+      },
+      {
+        "type": "button",
+        "label": "account_circle",
+        "line": 156
+      },
+      {
+        "type": "button",
+        "label": "Close Profile Panel",
+        "line": 201
+      },
+      {
+        "type": "button",
+        "label": "Edit Avatar",
+        "line": 211
+      },
+      {
+        "type": "button",
+        "label": "Toggle Email Notifications",
+        "line": 231
+      },
+      {
+        "type": "button",
+        "label": "Toggle Push Notifications",
+        "line": 243
+      },
+      {
+        "type": "button",
+        "label": "Toggle SMS Alerts",
+        "line": 258
+      },
+      {
+        "type": "button",
+        "label": "Manage Account Settings",
+        "line": 265
+      },
+      {
+        "type": "button",
+        "label": "logout",
+        "line": 273
+      }
+    ],
+    "inputs": [
+      {
+        "type": "input",
+        "label": "Search operations...",
+        "inputType": "text",
+        "placeholder": "Search operations...",
+        "line": 150
+      }
+    ],
+    "hardcodedData": [],
+    "totalInteractive": 15,
+    "requiresRouter": false,
+    "requiresDragDrop": false
+  },
+  {
+    "screenId": "db17c4057c334dfda3216e110b00f722",
+    "screenTitle": "Filtered Overview",
+    "deviceType": "DESKTOP",
+    "elements": [
+      {
+        "type": "link",
+        "label": "dashboard",
+        "href": "#",
+        "line": 128
+      },
+      {
+        "type": "link",
+        "label": "Task Board",
+        "href": "#",
+        "line": 134
+      },
+      {
+        "type": "link",
+        "label": "Equipment",
+        "href": "#",
+        "line": 140
+      },
+      {
+        "type": "link",
+        "label": "Logs",
+        "href": "#",
+        "line": 146
+      },
+      {
+        "type": "button",
+        "label": "Create Task",
+        "line": 122
+      },
+      {
+        "type": "button",
+        "label": "Sync",
+        "line": 169
+      },
+      {
+        "type": "button",
+        "label": "Account",
+        "line": 172
+      },
+      {
+        "type": "button",
+        "label": "Last 7 days",
+        "line": 186
+      },
+      {
+        "type": "button",
+        "label": "High Priority",
+        "line": 190
+      },
+      {
+        "type": "button",
+        "label": "Zone B",
+        "line": 194
+      },
+      {
+        "type": "button",
+        "label": "Status: Pending",
+        "line": 198
+      },
+      {
+        "type": "button",
+        "label": "View Details",
+        "line": 224
+      },
+      {
+        "type": "button",
+        "label": "View Details",
+        "line": 246
+      },
+      {
+        "type": "button",
+        "label": "View Details",
+        "line": 268
+      },
+      {
+        "type": "button",
+        "label": "View Details",
+        "line": 290
+      },
+      {
+        "type": "button",
+        "label": "Load More Results",
+        "line": 296
+      },
+      {
+        "type": "input",
+        "label": "Search logs...",
+        "inputType": "text",
+        "placeholder": "Search logs...",
+        "line": 165
+      }
+    ],
+    "navigation": [
+      {
+        "type": "link",
+        "label": "dashboard",
+        "href": "#",
+        "line": 128
+      },
+      {
+        "type": "link",
+        "label": "Task Board",
+        "href": "#",
+        "line": 134
+      },
+      {
+        "type": "link",
+        "label": "Equipment",
+        "href": "#",
+        "line": 140
+      },
+      {
+        "type": "link",
+        "label": "Logs",
+        "href": "#",
+        "line": 146
+      }
+    ],
+    "buttons": [
+      {
+        "type": "button",
+        "label": "Create Task",
+        "line": 122
+      },
+      {
+        "type": "button",
+        "label": "Sync",
+        "line": 169
+      },
+      {
+        "type": "button",
+        "label": "Account",
+        "line": 172
+      },
+      {
+        "type": "button",
+        "label": "Last 7 days",
+        "line": 186
+      },
+      {
+        "type": "button",
+        "label": "High Priority",
+        "line": 190
+      },
+      {
+        "type": "button",
+        "label": "Zone B",
+        "line": 194
+      },
+      {
+        "type": "button",
+        "label": "Status: Pending",
+        "line": 198
+      },
+      {
+        "type": "button",
+        "label": "View Details",
+        "line": 224
+      },
+      {
+        "type": "button",
+        "label": "View Details",
+        "line": 246
+      },
+      {
+        "type": "button",
+        "label": "View Details",
+        "line": 268
+      },
+      {
+        "type": "button",
+        "label": "View Details",
+        "line": 290
+      },
+      {
+        "type": "button",
+        "label": "Load More Results",
+        "line": 296
+      }
+    ],
+    "inputs": [
+      {
+        "type": "input",
+        "label": "Search logs...",
+        "inputType": "text",
+        "placeholder": "Search logs...",
+        "line": 165
+      }
+    ],
+    "hardcodedData": [],
+    "totalInteractive": 17,
+    "requiresRouter": false,
+    "requiresDragDrop": false
+  },
+  {
+    "screenId": "b6c2a851fa3b40449f4a606d3cb8b5a5",
+    "screenTitle": "Settings",
+    "deviceType": "DESKTOP",
+    "elements": [
+      {
+        "type": "link",
+        "label": "dashboard",
+        "href": "#",
+        "line": 130
+      },
+      {
+        "type": "link",
+        "label": "Task Board",
+        "href": "#",
+        "line": 134
+      },
+      {
+        "type": "link",
+        "label": "Equipment",
+        "href": "#",
+        "line": 138
+      },
+      {
+        "type": "link",
+        "label": "Logs",
+        "href": "#",
+        "line": 142
+      },
+      {
+        "type": "link",
+        "label": "settings",
+        "href": "#",
+        "line": 149
+      },
+      {
+        "type": "button",
+        "label": "Create Task",
+        "line": 124
+      },
+      {
+        "type": "button",
+        "label": "sync",
+        "line": 166
+      },
+      {
+        "type": "button",
+        "label": "account_circle",
+        "line": 169
+      },
+      {
+        "type": "button",
+        "label": "Light",
+        "line": 197
+      },
+      {
+        "type": "button",
+        "label": "Dark",
+        "line": 201
+      },
+      {
+        "type": "button",
+        "label": "Clear Application Cache",
+        "line": 248
+      },
+      {
+        "type": "input",
+        "label": "Search settings...",
+        "inputType": "text",
+        "placeholder": "Search settings...",
+        "line": 164
+      },
+      {
+        "type": "input",
+        "label": "select",
+        "inputType": "select",
+        "line": 215
+      },
+      {
+        "type": "input",
+        "label": "checkbox",
+        "inputType": "checkbox",
+        "line": 275
+      }
+    ],
+    "navigation": [
+      {
+        "type": "link",
+        "label": "dashboard",
+        "href": "#",
+        "line": 130
+      },
+      {
+        "type": "link",
+        "label": "Task Board",
+        "href": "#",
+        "line": 134
+      },
+      {
+        "type": "link",
+        "label": "Equipment",
+        "href": "#",
+        "line": 138
+      },
+      {
+        "type": "link",
+        "label": "Logs",
+        "href": "#",
+        "line": 142
+      },
+      {
+        "type": "link",
+        "label": "settings",
+        "href": "#",
+        "line": 149
+      }
+    ],
+    "buttons": [
+      {
+        "type": "button",
+        "label": "Create Task",
+        "line": 124
+      },
+      {
+        "type": "button",
+        "label": "sync",
+        "line": 166
+      },
+      {
+        "type": "button",
+        "label": "account_circle",
+        "line": 169
+      },
+      {
+        "type": "button",
+        "label": "Light",
+        "line": 197
+      },
+      {
+        "type": "button",
+        "label": "Dark",
+        "line": 201
+      },
+      {
+        "type": "button",
+        "label": "Clear Application Cache",
+        "line": 248
+      }
+    ],
+    "inputs": [
+      {
+        "type": "input",
+        "label": "Search settings...",
+        "inputType": "text",
+        "placeholder": "Search settings...",
+        "line": 164
+      },
+      {
+        "type": "input",
+        "label": "select",
+        "inputType": "select",
+        "line": 215
+      },
+      {
+        "type": "input",
+        "label": "checkbox",
+        "inputType": "checkbox",
+        "line": 275
+      }
+    ],
+    "hardcodedData": [],
+    "totalInteractive": 14,
+    "requiresRouter": false,
+    "requiresDragDrop": false
+  },
+  {
+    "screenId": "00ad43aaa8cb40098e866fbb396f7357",
+    "screenTitle": "Dashboard",
+    "deviceType": "DESKTOP",
+    "elements": [
+      {
+        "type": "link",
+        "label": "dashboard",
+        "href": "#",
+        "line": 117
+      },
+      {
+        "type": "link",
+        "label": "Task Board",
+        "href": "#",
+        "line": 123
+      },
+      {
+        "type": "link",
+        "label": "Equipment",
+        "href": "#",
+        "line": 129
+      },
+      {
+        "type": "link",
+        "label": "Logs",
+        "href": "#",
+        "line": 135
+      },
+      {
+        "type": "button",
+        "label": "Create Task",
+        "line": 142
+      },
+      {
+        "type": "button",
+        "label": "sync",
+        "line": 154
+      },
+      {
+        "type": "button",
+        "label": "account_circle",
+        "line": 157
+      },
+      {
+        "type": "button",
+        "label": "This Week",
+        "line": 209
+      },
+      {
+        "type": "button",
+        "label": "more_vert",
+        "line": 251
+      },
+      {
+        "type": "button",
+        "label": "View All Activity",
+        "line": 301
+      }
+    ],
+    "navigation": [
+      {
+        "type": "link",
+        "label": "dashboard",
+        "href": "#",
+        "line": 117
+      },
+      {
+        "type": "link",
+        "label": "Task Board",
+        "href": "#",
+        "line": 123
+      },
+      {
+        "type": "link",
+        "label": "Equipment",
+        "href": "#",
+        "line": 129
+      },
+      {
+        "type": "link",
+        "label": "Logs",
+        "href": "#",
+        "line": 135
+      }
+    ],
+    "buttons": [
+      {
+        "type": "button",
+        "label": "Create Task",
+        "line": 142
+      },
+      {
+        "type": "button",
+        "label": "sync",
+        "line": 154
+      },
+      {
+        "type": "button",
+        "label": "account_circle",
+        "line": 157
+      },
+      {
+        "type": "button",
+        "label": "This Week",
+        "line": 209
+      },
+      {
+        "type": "button",
+        "label": "more_vert",
+        "line": 251
+      },
+      {
+        "type": "button",
+        "label": "View All Activity",
+        "line": 301
+      }
+    ],
+    "inputs": [],
+    "hardcodedData": [],
+    "totalInteractive": 10,
+    "requiresRouter": false,
+    "requiresDragDrop": false
+  },
+  {
+    "screenId": "804ad20c9b26420b8a6fad2ee5fe7ecc",
+    "screenTitle": "Storage Error State",
+    "deviceType": "DESKTOP",
+    "elements": [
+      {
+        "type": "link",
+        "label": "dashboard",
+        "href": "#",
+        "line": 156
+      },
+      {
+        "type": "link",
+        "label": "Task Board",
+        "href": "#",
+        "line": 162
+      },
+      {
+        "type": "link",
+        "label": "Equipment",
+        "href": "#",
+        "line": 168
+      },
+      {
+        "type": "link",
+        "label": "Logs",
+        "href": "#",
+        "line": 174
+      },
+      {
+        "type": "button",
+        "label": "Retry Connection",
+        "line": 127
+      },
+      {
+        "type": "button",
+        "label": "Reset Application Data",
+        "line": 131
+      },
+      {
+        "type": "button",
+        "label": "Create Task",
+        "line": 182
+      },
+      {
+        "type": "button",
+        "label": "Sync",
+        "line": 203
+      },
+      {
+        "type": "button",
+        "label": "Account",
+        "line": 206
+      }
+    ],
+    "navigation": [
+      {
+        "type": "link",
+        "label": "dashboard",
+        "href": "#",
+        "line": 156
+      },
+      {
+        "type": "link",
+        "label": "Task Board",
+        "href": "#",
+        "line": 162
+      },
+      {
+        "type": "link",
+        "label": "Equipment",
+        "href": "#",
+        "line": 168
+      },
+      {
+        "type": "link",
+        "label": "Logs",
+        "href": "#",
+        "line": 174
+      }
+    ],
+    "buttons": [
+      {
+        "type": "button",
+        "label": "Retry Connection",
+        "line": 127
+      },
+      {
+        "type": "button",
+        "label": "Reset Application Data",
+        "line": 131
+      },
+      {
+        "type": "button",
+        "label": "Create Task",
+        "line": 182
+      },
+      {
+        "type": "button",
+        "label": "Sync",
+        "line": 203
+      },
+      {
+        "type": "button",
+        "label": "Account",
+        "line": 206
+      }
+    ],
+    "inputs": [],
+    "hardcodedData": [],
+    "totalInteractive": 9,
+    "requiresRouter": false,
+    "requiresDragDrop": false
+  },
+  {
+    "screenId": "cd8326dabc734e43957ba2919e4a21bf",
+    "screenTitle": "Task Board",
+    "deviceType": "DESKTOP",
+    "elements": [
+      {
+        "type": "link",
+        "label": "dashboard",
+        "href": "#",
+        "line": 185
+      },
+      {
+        "type": "link",
+        "label": "Task Board",
+        "href": "#",
+        "line": 189
+      },
+      {
+        "type": "link",
+        "label": "Equipment",
+        "href": "#",
+        "line": 193
+      },
+      {
+        "type": "link",
+        "label": "Logs",
+        "href": "#",
+        "line": 197
+      },
+      {
+        "type": "button",
+        "label": "Create Task",
+        "line": 180
+      },
+      {
+        "type": "button",
+        "label": "sync",
+        "line": 221
+      },
+      {
+        "type": "button",
+        "label": "more_horiz",
+        "line": 236
+      },
+      {
+        "type": "button",
+        "label": "more_horiz",
+        "line": 284
+      },
+      {
+        "type": "button",
+        "label": "more_horiz",
+        "line": 317
+      },
+      {
+        "type": "input",
+        "label": "Search tasks...",
+        "inputType": "text",
+        "placeholder": "Search tasks...",
+        "line": 219
+      }
+    ],
+    "navigation": [
+      {
+        "type": "link",
+        "label": "dashboard",
+        "href": "#",
+        "line": 185
+      },
+      {
+        "type": "link",
+        "label": "Task Board",
+        "href": "#",
+        "line": 189
+      },
+      {
+        "type": "link",
+        "label": "Equipment",
+        "href": "#",
+        "line": 193
+      },
+      {
+        "type": "link",
+        "label": "Logs",
+        "href": "#",
+        "line": 197
+      }
+    ],
+    "buttons": [
+      {
+        "type": "button",
+        "label": "Create Task",
+        "line": 180
+      },
+      {
+        "type": "button",
+        "label": "sync",
+        "line": 221
+      },
+      {
+        "type": "button",
+        "label": "more_horiz",
+        "line": 236
+      },
+      {
+        "type": "button",
+        "label": "more_horiz",
+        "line": 284
+      },
+      {
+        "type": "button",
+        "label": "more_horiz",
+        "line": 317
+      }
+    ],
+    "inputs": [
+      {
+        "type": "input",
+        "label": "Search tasks...",
+        "inputType": "text",
+        "placeholder": "Search tasks...",
+        "line": 219
+      }
+    ],
+    "hardcodedData": [],
+    "totalInteractive": 10,
+    "requiresRouter": false,
+    "requiresDragDrop": false
+  },
+  {
+    "screenId": "6abfcfd24d974af28274f478df012ca5",
+    "screenTitle": "Empty State",
+    "deviceType": "DESKTOP",
+    "elements": [
+      {
+        "type": "link",
+        "label": "dashboard",
+        "href": "#",
+        "line": 120
+      },
+      {
+        "type": "link",
+        "label": "Task Board",
+        "href": "#",
+        "line": 126
+      },
+      {
+        "type": "link",
+        "label": "Equipment",
+        "href": "#",
+        "line": 132
+      },
+      {
+        "type": "link",
+        "label": "Logs",
+        "href": "#",
+        "line": 138
+      },
+      {
+        "type": "button",
+        "label": "Create Task",
+        "line": 145
+      },
+      {
+        "type": "button",
+        "label": "sync",
+        "line": 167
+      },
+      {
+        "type": "button",
+        "label": "account_circle",
+        "line": 170
+      },
+      {
+        "type": "button",
+        "label": "Create Your First Task",
+        "line": 187
+      }
+    ],
+    "navigation": [
+      {
+        "type": "link",
+        "label": "dashboard",
+        "href": "#",
+        "line": 120
+      },
+      {
+        "type": "link",
+        "label": "Task Board",
+        "href": "#",
+        "line": 126
+      },
+      {
+        "type": "link",
+        "label": "Equipment",
+        "href": "#",
+        "line": 132
+      },
+      {
+        "type": "link",
+        "label": "Logs",
+        "href": "#",
+        "line": 138
+      }
+    ],
+    "buttons": [
+      {
+        "type": "button",
+        "label": "Create Task",
+        "line": 145
+      },
+      {
+        "type": "button",
+        "label": "sync",
+        "line": 167
+      },
+      {
+        "type": "button",
+        "label": "account_circle",
+        "line": 170
+      },
+      {
+        "type": "button",
+        "label": "Create Your First Task",
+        "line": 187
+      }
+    ],
+    "inputs": [],
+    "hardcodedData": [],
+    "totalInteractive": 8,
+    "requiresRouter": false,
+    "requiresDragDrop": false
+  }
+]
