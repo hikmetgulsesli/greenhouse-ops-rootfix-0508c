@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Greenhouse Ops - Task Board</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+  tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        "colors": {
+                "error": "#ffb4ab",
+                "inverse-surface": "#e1e2ec",
+                "outline-variant": "#424754",
+                "primary-fixed-dim": "#adc6ff",
+                "on-background": "#e1e2ec",
+                "surface-container": "#1d2027",
+                "surface-container-lowest": "#0b0e15",
+                "on-primary-container": "#00285d",
+                "primary-fixed": "#d8e2ff",
+                "tertiary-container": "#df7412",
+                "primary-container": "#4d8eff",
+                "surface": "#10131a",
+                "surface-container-high": "#272a31",
+                "on-secondary-fixed": "#0d1c2d",
+                "error-container": "#93000a",
+                "on-tertiary-container": "#461f00",
+                "outline": "#8c909f",
+                "on-error": "#690005",
+                "secondary-fixed-dim": "#b9c8de",
+                "on-primary-fixed-variant": "#004395",
+                "tertiary": "#ffb786",
+                "surface-bright": "#363941",
+                "surface-container-low": "#191b23",
+                "on-tertiary-fixed": "#311400",
+                "secondary": "#b9c8de",
+                "surface-tint": "#adc6ff",
+                "secondary-fixed": "#d4e4fa",
+                "background": "#10131a",
+                "on-secondary": "#233143",
+                "on-secondary-fixed-variant": "#39485a",
+                "surface-variant": "#32353c",
+                "on-surface-variant": "#c2c6d6",
+                "on-error-container": "#ffdad6",
+                "secondary-container": "#39485a",
+                "on-surface": "#e1e2ec",
+                "tertiary-fixed": "#ffdcc6",
+                "inverse-primary": "#005ac2",
+                "surface-dim": "#10131a",
+                "inverse-on-surface": "#2e3038",
+                "on-primary": "#002e6a",
+                "on-tertiary": "#502400",
+                "primary": "#adc6ff",
+                "surface-container-highest": "#32353c",
+                "on-secondary-container": "#a7b6cc",
+                "on-primary-fixed": "#001a42",
+                "tertiary-fixed-dim": "#ffb786",
+                "on-tertiary-fixed-variant": "#723600"
+        },
+        "borderRadius": {
+                "DEFAULT": "0.125rem",
+                "lg": "0.25rem",
+                "xl": "0.5rem",
+                "full": "0.75rem"
+        },
+        "spacing": {
+                "touch-target": "44px",
+                "gutter": "20px",
+                "lg": "24px",
+                "xl": "32px",
+                "sm": "8px",
+                "md": "16px",
+                "margin": "24px",
+                "unit": "4px",
+                "xs": "4px"
+        },
+        "fontFamily": {
+                "body-lg": [
+                        "Inter"
+                ],
+                "code": [
+                        "monospace"
+                ],
+                "label-md": [
+                        "Inter"
+                ],
+                "h1": [
+                        "Inter"
+                ],
+                "h2": [
+                        "Inter"
+                ],
+                "display": [
+                        "Inter"
+                ],
+                "body-md": [
+                        "Inter"
+                ]
+        },
+        "fontSize": {
+                "body-lg": [
+                        "16px",
+                        {
+                                "lineHeight": "24px",
+                                "fontWeight": "400"
+                        }
+                ],
+                "code": [
+                        "13px",
+                        {
+                                "lineHeight": "18px",
+                                "fontWeight": "400"
+                        }
+                ],
+                "label-md": [
+                        "12px",
+                        {
+                                "lineHeight": "16px",
+                                "letterSpacing": "0.05em",
+                                "fontWeight": "500"
+                        }
+                ],
+                "h1": [
+                        "24px",
+                        {
+                                "lineHeight": "32px",
+                                "letterSpacing": "-0.01em",
+                                "fontWeight": "600"
+                        }
+                ],
+                "h2": [
+                        "20px",
+                        {
+                                "lineHeight": "28px",
+                                "fontWeight": "600"
+                        }
+                ],
+                "display": [
+                        "30px",
+                        {
+                                "lineHeight": "38px",
+                                "letterSpacing": "-0.02em",
+                                "fontWeight": "600"
+                        }
+                ],
+                "body-md": [
+                        "14px",
+                        {
+                                "lineHeight": "20px",
+                                "fontWeight": "400"
+                        }
+                ]
+        }
+},
+    },
+  }
+</script>
+<style>
+  body {
+    background-color: theme('colors.background');
+    color: theme('colors.on-background');
+  }
+</style>
+</head>
+<body class="font-body-lg text-body-lg flex h-screen overflow-hidden bg-background text-on-background">
+<!-- SideNavBar -->
+<nav class="hidden md:flex flex-col h-full py-md px-sm bg-surface-container w-64 border-r border-surface-container-low shrink-0">
+<div class="flex items-center gap-sm mb-lg px-sm">
+<img alt="Company Logo" class="w-8 h-8 rounded-full" data-alt="A macro shot of a single green leaf with glowing dew drops, set against a dark, moody background. The lighting is dramatic, highlighting the intricate veins of the leaf. This represents the high-tech, precision nature of the Greenhouse Ops brand in a dark, corporate minimalist aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDyuIMymQlKBdXU-OTSpvGxWdoGlzzg4RDnIdyQXLtT5a49Bcmqhqq1pW8I1-zfjlVuhAkNDNupeubBA2otXsmacr7Dx3wRwIvktpCq7TFK-HccbQ8W7w1UQ8ycs1Nt78my7rTbUUXwWps2MaTUmUqCFL2qY8H7bFJxJ_dCKwbwaOZDq-9dlnatP_m1lO1oIS2SlLW_8YAFYGGQ_TdjIvQZN97qO2YQQRlA5b_YpxPoEA6GS-VGrY56d2GW47ZLTX1oCw03cYhjKXU"/>
+<div>
+<h2 class="font-h2 text-h2 text-primary">Greenhouse Ops</h2>
+<p class="font-label-md text-label-md text-on-surface-variant">Maintenance Console</p>
+</div>
+</div>
+<button class="flex items-center justify-center gap-sm bg-primary text-on-primary rounded h-touch-target font-label-md text-label-md hover:bg-primary-fixed transition-colors mb-lg mx-sm">
+<span class="material-symbols-outlined text-[18px]">add</span>
+      Create Task
+    </button>
+<div class="flex flex-col gap-xs flex-1 overflow-y-auto">
+<a class="flex items-center gap-sm px-sm py-sm rounded h-touch-target text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" href="#">
+<span class="material-symbols-outlined text-[20px]">dashboard</span>
+<span class="font-body-md text-body-md">Dashboard</span>
+</a>
+<a class="flex items-center gap-sm px-sm py-sm rounded h-touch-target text-primary font-bold bg-surface-container-high border-l-2 border-primary" href="#">
+<span class="material-symbols-outlined text-[20px]">assignment</span>
+<span class="font-body-md text-body-md">Task Board</span>
+</a>
+<a class="flex items-center gap-sm px-sm py-sm rounded h-touch-target text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" href="#">
+<span class="material-symbols-outlined text-[20px]">precision_manufacturing</span>
+<span class="font-body-md text-body-md">Equipment</span>
+</a>
+<a class="flex items-center gap-sm px-sm py-sm rounded h-touch-target text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" href="#">
+<span class="material-symbols-outlined text-[20px]">database</span>
+<span class="font-body-md text-body-md">Logs</span>
+</a>
+</div>
+<div class="mt-auto px-sm pt-md border-t border-surface-container-low">
+<div class="flex items-center gap-sm h-touch-target">
+<img alt="User profile" class="w-8 h-8 rounded-full" data-alt="A professional headshot of a technician in a dark blue uniform, looking confidently at the camera. The background is a slightly blurred, dimly lit industrial greenhouse setting. The lighting on the face is crisp and cool, matching the dark mode, enterprise-grade aesthetic of the interface." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAlg0YpsW1GszFacBvYyp5-7TeYjQHe-5OJkE0uF8a6me4j24nSOWtWGVOfkOS88jYluQNPz-WJHBtFq6rYmdH11iBkBp0pyVLxG3d2LidASLOCfGDcFz9U0nO7NdWjEg5kS82mul3hWQZJII9ZctpuA_XHuqmf-8MrZyRRCAVeRmqdzNj5OPyk6eBXgGuw39c0uZOFOJsa3TqT_ILmh_hw5Wgzr6my7hKPD3vbCXfsk5_OdtdLVl_8WtbNOKieGaW8d2TD1JaIl38"/>
+<div class="flex-1 min-w-0">
+<p class="font-body-md text-body-md text-on-surface truncate">Tech 04 - JD</p>
+</div>
+</div>
+</div>
+</nav>
+<!-- Main Content Area -->
+<main class="flex-1 flex flex-col min-w-0 h-full overflow-hidden">
+<!-- TopAppBar -->
+<header class="flex justify-between items-center h-touch-target px-lg py-md bg-surface shrink-0 border-b border-surface-container-lowest">
+<h1 class="font-h1 text-h1 text-primary truncate">Task Board</h1>
+<div class="flex items-center gap-sm">
+<div class="relative hidden sm:block">
+<span class="material-symbols-outlined absolute left-sm top-1/2 -translate-y-1/2 text-on-surface-variant text-[18px]">search</span>
+<input class="bg-surface-container border border-outline-variant rounded h-touch-target pl-xl pr-sm text-on-surface font-body-md focus:border-primary focus:ring-1 focus:ring-primary w-64 placeholder-on-surface-variant" placeholder="Search tasks..." type="text"/>
+</div>
+<button class="w-11 h-touch-target flex items-center justify-center rounded text-on-surface-variant hover:text-primary transition-all hover:bg-surface-container-high">
+<span class="material-symbols-outlined">sync</span>
+</button>
+</div>
+</header>
+<!-- Kanban Canvas -->
+<div class="flex-1 overflow-x-auto overflow-y-hidden p-lg bg-background">
+<div class="flex h-full gap-gutter min-w-max">
+<!-- Column: Todo -->
+<div class="flex flex-col w-80 shrink-0 h-full">
+<div class="flex items-center justify-between mb-sm px-xs">
+<div class="flex items-center gap-xs">
+<h3 class="font-h2 text-h2 text-on-surface">Todo</h3>
+<span class="bg-surface-container px-xs py-1 rounded font-code text-code text-on-surface-variant">3</span>
+</div>
+<button class="text-on-surface-variant hover:text-primary"><span class="material-symbols-outlined text-[18px]">more_horiz</span></button>
+</div>
+<div class="flex-1 overflow-y-auto space-y-sm p-1">
+<!-- Card 1 -->
+<div class="bg-surface rounded-xl border border-surface-container-lowest p-md hover:bg-surface-container-low transition-colors cursor-pointer group">
+<div class="flex justify-between items-start mb-sm">
+<span class="bg-error-container/20 text-error px-2 py-0.5 rounded-full font-label-md text-label-md">High</span>
+<span class="text-on-surface-variant font-code text-code group-hover:text-primary">TSK-892</span>
+</div>
+<h4 class="font-body-lg text-body-lg text-on-surface mb-2">Irrigation Filter Cleaning</h4>
+<p class="font-body-md text-body-md text-on-surface-variant mb-md line-clamp-2">Zone C main line filter requires backwashing and visual inspection.</p>
+<div class="flex items-center justify-between mt-auto">
+<div class="flex -space-x-2">
+<img alt="Assignee" class="w-6 h-6 rounded-full border-2 border-surface" data-alt="A small circular avatar portrait of a female technician in a dark setting, looking focused. The lighting highlights her face against a dark, out-of-focus background, fitting the high-tech, corporate minimalist style of the application." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDg6481oZNfnpgrBsdFOfZcxOBSHOcFKtym-JyTlt1k_Mo4Ucbe3JewLZ-oa9GRaex9PUoo92QnYTQZX9Sg6mt_3F0RYi-v4KSiyLmiUM5VfTuDLtFqFgP5SZi5CCjwDadILG0ndpAC13n05Dkn9g0tKRzy4bwHlITvXpEbwNYEXAawfOvDAeW8-cWIj7Z4KrYMscJ4bZvoUe7NiVsS87CEEhSvE0j-I1MC54JhHF2nP8900k0CoGaGr9VKnMUluMv88x96tquLAd0"/>
+</div>
+<div class="flex items-center text-on-surface-variant gap-xs">
+<span class="material-symbols-outlined text-[16px]">calendar_today</span>
+<span class="font-label-md text-label-md">Today</span>
+</div>
+</div>
+</div>
+<!-- Card 2 -->
+<div class="bg-surface rounded-xl border border-surface-container-lowest p-md hover:bg-surface-container-low transition-colors cursor-pointer group">
+<div class="flex justify-between items-start mb-sm">
+<span class="bg-tertiary-container/20 text-tertiary px-2 py-0.5 rounded-full font-label-md text-label-md">Med</span>
+<span class="text-on-surface-variant font-code text-code group-hover:text-primary">TSK-895</span>
+</div>
+<h4 class="font-body-lg text-body-lg text-on-surface mb-2">Sensor Calibration - Bay 4</h4>
+<p class="font-body-md text-body-md text-on-surface-variant mb-md line-clamp-2">Recalibrate humidity and temperature nodes on the east wall.</p>
+<div class="flex items-center justify-between mt-auto">
+<div class="flex -space-x-2">
+<img alt="Assignee" class="w-6 h-6 rounded-full border-2 border-surface" data-alt="A small circular avatar portrait of a male technician. He is wearing a dark shirt and the background is a muted, dark grey. The portrait is sharp and professional, aligning with the dark mode operational aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBFdE83gJMK32e0yoUaeN5dD32tURcpErnPRPPvvop6NJFO9GC25Cwcc9XChSiSpr44z0yhoy4Vp8oEe2U6q3LTgWsB81EFvzdMjUDj3E7hPdbvNqGljqyXmJ3cQeStiHN7dgete4t7M4Lsa1PLEzsogJiIoOISbWT-PiLw0Yrn46Y_YHUp_HDG1eL4ognPnb77Tyork4HmTEwZvhevI5L79EPnkziK_7wr-s_CYKPmwB8FXJgMoyg0nomlfDwncj4tcjqj_dizR7E"/>
+</div>
+<div class="flex items-center text-on-surface-variant gap-xs">
+<span class="material-symbols-outlined text-[16px]">calendar_today</span>
+<span class="font-label-md text-label-md">Tomorrow</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Column: In Progress -->
+<div class="flex flex-col w-80 shrink-0 h-full">
+<div class="flex items-center justify-between mb-sm px-xs">
+<div class="flex items-center gap-xs">
+<h3 class="font-h2 text-h2 text-on-surface">In Progress</h3>
+<span class="bg-surface-container px-xs py-1 rounded font-code text-code text-on-surface-variant">2</span>
+</div>
+<button class="text-on-surface-variant hover:text-primary"><span class="material-symbols-outlined text-[18px]">more_horiz</span></button>
+</div>
+<div class="flex-1 overflow-y-auto space-y-sm p-1">
+<!-- Card 3 -->
+<div class="bg-surface-container border border-primary/30 rounded-xl p-md shadow-[0_0_10px_rgba(77,142,255,0.05)] cursor-pointer group">
+<div class="flex justify-between items-start mb-sm">
+<span class="bg-error-container/20 text-error px-2 py-0.5 rounded-full font-label-md text-label-md">High</span>
+<span class="text-primary font-code text-code">TSK-889</span>
+</div>
+<h4 class="font-body-lg text-body-lg text-on-surface mb-2">HVAC Fan Bearing Replacement</h4>
+<p class="font-body-md text-body-md text-on-surface-variant mb-md line-clamp-2">Unit 2A is reporting high vibration levels. Replace main bearings.</p>
+<div class="w-full bg-surface-container-high rounded-full h-1.5 mb-md">
+<div class="bg-primary h-1.5 rounded-full w-[65%]"></div>
+</div>
+<div class="flex items-center justify-between mt-auto">
+<div class="flex -space-x-2">
+<img alt="Assignee" class="w-6 h-6 rounded-full border-2 border-surface" data-alt="A small circular avatar portrait of a technician in a dark blue uniform, looking confidently at the camera. The background is a slightly blurred, dimly lit industrial greenhouse setting. The lighting on the face is crisp and cool, matching the dark mode, enterprise-grade aesthetic of the interface." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDbrn6t104DzxgkMMuhh8DeCzvtPaaUrK7XQ7GrMWWY7cQcsB0T3Y7PQYKYjp5eJmGmTngI8HkkUjWT7Ca6HTtbGwxFRFwJHOnWufw4PA0AJBlTrpLv7UXKOzmiRC1z9DOwo7AziAWq2G_8OcKNsWfVwUtzqzvTJ10dJ_5upMv4b9zFmWx-vO-Q2lASVhOxt4kbLfbTwLo0PMQd9MPP9LbqLIqnT_vQ3UJdnE-gh1lHGq87aldeWGNRlUgxYMz9_fLFAu6Ttj4Cy38"/>
+</div>
+<div class="flex items-center text-primary gap-xs">
+<span class="material-symbols-outlined text-[16px] animate-pulse">pending</span>
+<span class="font-label-md text-label-md">In Progress</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Column: Done -->
+<div class="flex flex-col w-80 shrink-0 h-full opacity-70 hover:opacity-100 transition-opacity">
+<div class="flex items-center justify-between mb-sm px-xs">
+<div class="flex items-center gap-xs">
+<h3 class="font-h2 text-h2 text-on-surface">Done</h3>
+<span class="bg-surface-container px-xs py-1 rounded font-code text-code text-on-surface-variant">12</span>
+</div>
+<button class="text-on-surface-variant hover:text-primary"><span class="material-symbols-outlined text-[18px]">more_horiz</span></button>
+</div>
+<div class="flex-1 overflow-y-auto space-y-sm p-1">
+<!-- Card 4 -->
+<div class="bg-surface rounded-xl border border-surface-container-lowest p-md cursor-default">
+<div class="flex justify-between items-start mb-sm">
+<span class="bg-surface-container-high text-on-surface-variant px-2 py-0.5 rounded-full font-label-md text-label-md">Low</span>
+<span class="text-on-surface-variant font-code text-code">TSK-880</span>
+</div>
+<h4 class="font-body-lg text-body-lg text-on-surface-variant line-through mb-2">Nutrient Tank Refill</h4>
+<div class="flex items-center justify-between mt-md">
+<div class="flex -space-x-2 opacity-50">
+<img alt="Assignee" class="w-6 h-6 rounded-full border-2 border-surface" data-alt="A small circular avatar portrait of a male technician. He is wearing a dark shirt and the background is a muted, dark grey. The portrait is sharp and professional, aligning with the dark mode operational aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDCOpdW8jNGI-VRtBVK3RQYCbgyqpELAJPsifNBlxXbqZutMvJ0mNcgdF0LW3Mm8S5dX61YEFn6frUrx3R31XTSIduzLYk0U00xV7qZL-uwAUrTaLsrSWlNQuHW4LncSYbD_MnAfz0IJJYNmPOq9scCnk_qCjYfIktsRDOOD-6hiXjm5w2CYnQPj7MX3Y2oNVxWsvw-K0kawnP7AkqdgJ2Kl-w_UiXJ2PwGc_szOEOqRYPfdgluKfWPQDJjDqC5mcE4h-t4-pK4Un4"/>
+</div>
+<div class="flex items-center text-on-surface-variant gap-xs">
+<span class="material-symbols-outlined text-[16px]">check_circle</span>
+<span class="font-label-md text-label-md">08:30 AM</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</main>
+</body></html>

@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Equipment Status - Greenhouse Ops</title>
+<!-- Material Symbols Outlined -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>
+        .material-symbols-outlined {
+            font-family: 'Material Symbols Outlined';
+            font-weight: normal;
+            font-style: normal;
+            font-size: 24px;  /* Preferred icon size */
+            display: inline-block;
+            line-height: 1;
+            text-transform: none;
+            letter-spacing: normal;
+            word-wrap: normal;
+            white-space: nowrap;
+            direction: ltr;
+        }
+    </style>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Theme Configuration -->
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "error": "#ffb4ab",
+                    "inverse-surface": "#e1e2ec",
+                    "outline-variant": "#424754",
+                    "primary-fixed-dim": "#adc6ff",
+                    "on-background": "#e1e2ec",
+                    "surface-container": "#1d2027",
+                    "surface-container-lowest": "#0b0e15",
+                    "on-primary-container": "#00285d",
+                    "primary-fixed": "#d8e2ff",
+                    "tertiary-container": "#df7412",
+                    "primary-container": "#4d8eff",
+                    "surface": "#10131a",
+                    "surface-container-high": "#272a31",
+                    "on-secondary-fixed": "#0d1c2d",
+                    "error-container": "#93000a",
+                    "on-tertiary-container": "#461f00",
+                    "outline": "#8c909f",
+                    "on-error": "#690005",
+                    "secondary-fixed-dim": "#b9c8de",
+                    "on-primary-fixed-variant": "#004395",
+                    "tertiary": "#ffb786",
+                    "surface-bright": "#363941",
+                    "surface-container-low": "#191b23",
+                    "on-tertiary-fixed": "#311400",
+                    "secondary": "#b9c8de",
+                    "surface-tint": "#adc6ff",
+                    "secondary-fixed": "#d4e4fa",
+                    "background": "#10131a",
+                    "on-secondary": "#233143",
+                    "on-secondary-fixed-variant": "#39485a",
+                    "surface-variant": "#32353c",
+                    "on-surface-variant": "#c2c6d6",
+                    "on-error-container": "#ffdad6",
+                    "secondary-container": "#39485a",
+                    "on-surface": "#e1e2ec",
+                    "tertiary-fixed": "#ffdcc6",
+                    "inverse-primary": "#005ac2",
+                    "surface-dim": "#10131a",
+                    "inverse-on-surface": "#2e3038",
+                    "on-primary": "#002e6a",
+                    "on-tertiary": "#502400",
+                    "primary": "#adc6ff",
+                    "surface-container-highest": "#32353c",
+                    "on-secondary-container": "#a7b6cc",
+                    "on-primary-fixed": "#001a42",
+                    "tertiary-fixed-dim": "#ffb786",
+                    "on-tertiary-fixed-variant": "#723600"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "spacing": {
+                    "touch-target": "44px",
+                    "gutter": "20px",
+                    "lg": "24px",
+                    "xl": "32px",
+                    "sm": "8px",
+                    "md": "16px",
+                    "margin": "24px",
+                    "unit": "4px",
+                    "xs": "4px"
+            },
+            "fontFamily": {
+                    "body-lg": [
+                            "Inter"
+                    ],
+                    "code": [
+                            "monospace"
+                    ],
+                    "label-md": [
+                            "Inter"
+                    ],
+                    "h1": [
+                            "Inter"
+                    ],
+                    "h2": [
+                            "Inter"
+                    ],
+                    "display": [
+                            "Inter"
+                    ],
+                    "body-md": [
+                            "Inter"
+                    ]
+            },
+            "fontSize": {
+                    "body-lg": [
+                            "16px",
+                            {
+                                    "lineHeight": "24px",
+                                    "fontWeight": "400"
+                            }
+                    ],
+                    "code": [
+                            "13px",
+                            {
+                                    "lineHeight": "18px",
+                                    "fontWeight": "400"
+                            }
+                    ],
+                    "label-md": [
+                            "12px",
+                            {
+                                    "lineHeight": "16px",
+                                    "letterSpacing": "0.05em",
+                                    "fontWeight": "500"
+                            }
+                    ],
+                    "h1": [
+                            "24px",
+                            {
+                                    "lineHeight": "32px",
+                                    "letterSpacing": "-0.01em",
+                                    "fontWeight": "600"
+                            }
+                    ],
+                    "h2": [
+                            "20px",
+                            {
+                                    "lineHeight": "28px",
+                                    "fontWeight": "600"
+                            }
+                    ],
+                    "display": [
+                            "30px",
+                            {
+                                    "lineHeight": "38px",
+                                    "letterSpacing": "-0.02em",
+                                    "fontWeight": "600"
+                            }
+                    ],
+                    "body-md": [
+                            "14px",
+                            {
+                                    "lineHeight": "20px",
+                                    "fontWeight": "400"
+                            }
+                    ]
+            }
+    },
+        },
+      }
+    </script>
+</head>
+<body class="bg-background text-on-background font-body-md text-body-md min-h-screen flex">
+<!-- SideNavBar (Shared Component) -->
+<nav class="hidden md:flex fixed left-0 top-0 h-full w-64 bg-surface-container dark:bg-surface-container flex flex-col h-full py-md px-sm shadow-[1px_0_0_0_rgba(25,27,35,1)] z-50">
+<!-- Brand Header -->
+<div class="flex items-center gap-md px-md pb-lg mb-md shadow-[0_1px_0_0_rgba(25,27,35,1)]">
+<div class="w-10 h-10 rounded-full bg-primary-container flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-on-primary-container" data-icon="eco">eco</span>
+</div>
+<div class="flex flex-col">
+<span class="font-h2 text-h2 text-primary">Greenhouse Ops</span>
+<span class="font-label-md text-label-md text-on-surface-variant">Maintenance Console</span>
+</div>
+</div>
+<!-- Navigation Tabs -->
+<ul class="flex flex-col gap-sm flex-1">
+<li>
+<a class="flex items-center gap-md px-md h-touch-target rounded-DEFAULT text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" href="#">
+<span class="material-symbols-outlined" data-icon="dashboard">dashboard</span>
+<span class="font-body-md text-body-md">Dashboard</span>
+</a>
+</li>
+<li>
+<a class="flex items-center gap-md px-md h-touch-target rounded-DEFAULT text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" href="#">
+<span class="material-symbols-outlined" data-icon="assignment">assignment</span>
+<span class="font-body-md text-body-md">Task Board</span>
+</a>
+</li>
+<!-- Active Tab -->
+<li>
+<a class="flex items-center gap-md px-md h-touch-target rounded-DEFAULT text-primary font-bold border-r-2 border-primary bg-surface-container-high opacity-80" href="#">
+<span class="material-symbols-outlined" data-icon="precision_manufacturing">precision_manufacturing</span>
+<span class="font-body-md text-body-md">Equipment</span>
+</a>
+</li>
+<li>
+<a class="flex items-center gap-md px-md h-touch-target rounded-DEFAULT text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" href="#">
+<span class="material-symbols-outlined" data-icon="database">database</span>
+<span class="font-body-md text-body-md">Logs</span>
+</a>
+</li>
+</ul>
+<!-- CTA -->
+<div class="pt-md mt-auto">
+<button class="w-full flex items-center justify-center gap-sm h-touch-target bg-primary-container text-on-primary-container font-label-md text-label-md rounded-lg hover:bg-primary hover:text-on-primary transition-colors focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 focus:ring-offset-surface-container">
+<span class="material-symbols-outlined" data-icon="add">add</span>
+                Create Task
+            </button>
+</div>
+</nav>
+<!-- TopAppBar (Shared Component) -->
+<header class="hidden md:flex fixed top-0 right-0 w-[calc(100%-16rem)] bg-surface dark:bg-surface-dim flex justify-between items-center h-[76px] px-lg py-md shadow-[0_1px_0_0_rgba(11,14,21,1)] z-40">
+<div class="flex items-center">
+<h1 class="font-h1 text-h1 text-primary dark:text-primary-fixed-dim">Equipment Status</h1>
+</div>
+<div class="flex items-center gap-md">
+<div class="relative w-64">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-on-surface-variant text-[20px]" data-icon="search">search</span>
+<input class="w-full h-touch-target pl-10 pr-4 bg-surface-container text-on-surface font-body-md text-body-md rounded-lg border border-outline-variant focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary placeholder-on-surface-variant transition-colors" placeholder="Search equipment..." type="text"/>
+</div>
+<button class="w-touch-target h-touch-target flex items-center justify-center rounded-full text-on-surface-variant hover:text-primary hover:bg-surface-container-high transition-all active:scale-95 duration-150">
+<span class="material-symbols-outlined" data-icon="sync">sync</span>
+</button>
+<button class="w-touch-target h-touch-target flex items-center justify-center rounded-full text-on-surface-variant hover:text-primary hover:bg-surface-container-high transition-all active:scale-95 duration-150">
+<span class="material-symbols-outlined" data-icon="account_circle">account_circle</span>
+</button>
+</div>
+</header>
+<!-- Main Content Canvas -->
+<main class="flex-1 md:ml-64 mt-[76px] p-xl flex flex-col gap-lg">
+<!-- Filter Bar -->
+<section class="flex flex-wrap items-center gap-sm">
+<span class="font-label-md text-label-md text-on-surface-variant mr-md uppercase tracking-wider">Filter By Status:</span>
+<button class="px-md h-touch-target flex items-center justify-center rounded-full bg-primary-container text-on-primary-container font-label-md text-label-md font-bold focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 focus:ring-offset-background">
+                All Systems
+            </button>
+<button class="px-md h-touch-target flex items-center justify-center rounded-full border border-outline-variant text-on-surface-variant font-label-md text-label-md hover:bg-surface-container-high transition-colors focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 focus:ring-offset-background">
+                Healthy
+            </button>
+<button class="px-md h-touch-target flex items-center justify-center rounded-full border border-outline-variant text-on-surface-variant font-label-md text-label-md hover:bg-surface-container-high transition-colors focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 focus:ring-offset-background">
+                Warning
+            </button>
+<button class="px-md h-touch-target flex items-center justify-center rounded-full border border-outline-variant text-on-surface-variant font-label-md text-label-md hover:bg-surface-container-high transition-colors focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 focus:ring-offset-background">
+                Critical
+            </button>
+</section>
+<!-- Equipment Grid -->
+<section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-gutter">
+<!-- Card 1: Healthy -->
+<div class="bg-surface-container rounded-xl p-md border border-outline-variant hover:bg-surface-container-high transition-colors flex flex-col gap-md group">
+<div class="flex justify-between items-start">
+<div class="flex items-center gap-sm">
+<div class="w-10 h-10 rounded-DEFAULT bg-primary-container flex items-center justify-center">
+<span class="material-symbols-outlined text-on-primary-container" data-icon="water_pump">water_pump</span>
+</div>
+<div>
+<h3 class="font-h2 text-h2 text-on-surface">Hydroponic Pump A</h3>
+<p class="font-label-md text-label-md text-on-surface-variant">Zone 1 - Main Artery</p>
+</div>
+</div>
+<span class="px-sm py-[2px] rounded-full bg-primary-fixed-dim/20 text-primary-fixed-dim font-label-md text-label-md border border-primary-fixed-dim/30">Active</span>
+</div>
+<div class="flex flex-col gap-unit">
+<div class="flex justify-between items-end">
+<span class="font-label-md text-label-md text-on-surface-variant">System Health</span>
+<span class="font-body-md text-body-md font-bold text-primary">98%</span>
+</div>
+<div class="w-full h-unit bg-surface-variant rounded-full overflow-hidden">
+<div class="h-full bg-primary rounded-full w-[98%]"></div>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-sm pt-sm border-t border-surface-variant">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface-variant uppercase">Power Usage</span>
+<span class="font-body-md text-body-md text-on-surface">1.2 kW/h</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface-variant uppercase">Flow Rate</span>
+<span class="font-body-md text-body-md text-on-surface">450 L/min</span>
+</div>
+</div>
+</div>
+<!-- Card 2: Warning -->
+<div class="bg-surface-container rounded-xl p-md border border-outline-variant hover:bg-surface-container-high transition-colors flex flex-col gap-md group">
+<div class="flex justify-between items-start">
+<div class="flex items-center gap-sm">
+<div class="w-10 h-10 rounded-DEFAULT bg-tertiary-container/20 flex items-center justify-center">
+<span class="material-symbols-outlined text-tertiary-container" data-icon="air">air</span>
+</div>
+<div>
+<h3 class="font-h2 text-h2 text-on-surface">Ventilation Fan 4</h3>
+<p class="font-label-md text-label-md text-on-surface-variant">Zone 3 - West Wing</p>
+</div>
+</div>
+<span class="px-sm py-[2px] rounded-full bg-tertiary-container/20 text-tertiary-container font-label-md text-label-md border border-tertiary-container/30">Warning</span>
+</div>
+<div class="flex flex-col gap-unit">
+<div class="flex justify-between items-end">
+<span class="font-label-md text-label-md text-on-surface-variant">System Health</span>
+<span class="font-body-md text-body-md font-bold text-tertiary-container">65%</span>
+</div>
+<div class="w-full h-unit bg-surface-variant rounded-full overflow-hidden">
+<div class="h-full bg-tertiary-container rounded-full w-[65%]"></div>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-sm pt-sm border-t border-surface-variant">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface-variant uppercase">RPM</span>
+<span class="font-body-md text-body-md text-on-surface">1150 / 1500</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface-variant uppercase">Vibration</span>
+<span class="font-body-md text-body-md text-tertiary-container">Elevated</span>
+</div>
+</div>
+</div>
+<!-- Card 3: Critical -->
+<div class="bg-surface-container rounded-xl p-md border border-error/50 shadow-[0_0_15px_rgba(255,180,171,0.1)] hover:bg-surface-container-high transition-colors flex flex-col gap-md group relative overflow-hidden">
+<div class="absolute top-0 left-0 w-1 h-full bg-error"></div>
+<div class="flex justify-between items-start pl-sm">
+<div class="flex items-center gap-sm">
+<div class="w-10 h-10 rounded-DEFAULT bg-error-container flex items-center justify-center animate-pulse">
+<span class="material-symbols-outlined text-on-error-container" data-icon="thermostat">thermostat</span>
+</div>
+<div>
+<h3 class="font-h2 text-h2 text-on-surface">Climate Control Unit C</h3>
+<p class="font-label-md text-label-md text-on-surface-variant">Zone 2 - Seedlings</p>
+</div>
+</div>
+<span class="px-sm py-[2px] rounded-full bg-error text-on-error font-label-md text-label-md">Critical</span>
+</div>
+<div class="flex flex-col gap-unit pl-sm">
+<div class="flex justify-between items-end">
+<span class="font-label-md text-label-md text-on-surface-variant">System Health</span>
+<span class="font-body-md text-body-md font-bold text-error">15%</span>
+</div>
+<div class="w-full h-unit bg-surface-variant rounded-full overflow-hidden">
+<div class="h-full bg-error rounded-full w-[15%]"></div>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-sm pt-sm border-t border-surface-variant pl-sm">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface-variant uppercase">Temp Delta</span>
+<span class="font-body-md text-body-md text-error">+5.2°C</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface-variant uppercase">Coolant Level</span>
+<span class="font-body-md text-body-md text-error">Depleted</span>
+</div>
+</div>
+</div>
+<!-- Card 4: Healthy -->
+<div class="bg-surface-container rounded-xl p-md border border-outline-variant hover:bg-surface-container-high transition-colors flex flex-col gap-md group">
+<div class="flex justify-between items-start">
+<div class="flex items-center gap-sm">
+<div class="w-10 h-10 rounded-DEFAULT bg-surface-variant flex items-center justify-center">
+<span class="material-symbols-outlined text-on-surface-variant" data-icon="lightbulb">lightbulb</span>
+</div>
+<div>
+<h3 class="font-h2 text-h2 text-on-surface">LED Array Alpha</h3>
+<p class="font-label-md text-label-md text-on-surface-variant">Zone 1 - Canopy</p>
+</div>
+</div>
+<span class="px-sm py-[2px] rounded-full bg-primary-fixed-dim/20 text-primary-fixed-dim font-label-md text-label-md border border-primary-fixed-dim/30">Active</span>
+</div>
+<div class="flex flex-col gap-unit">
+<div class="flex justify-between items-end">
+<span class="font-label-md text-label-md text-on-surface-variant">System Health</span>
+<span class="font-body-md text-body-md font-bold text-primary">100%</span>
+</div>
+<div class="w-full h-unit bg-surface-variant rounded-full overflow-hidden">
+<div class="h-full bg-primary rounded-full w-full"></div>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-sm pt-sm border-t border-surface-variant">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface-variant uppercase">Power Usage</span>
+<span class="font-body-md text-body-md text-on-surface">4.5 kW/h</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface-variant uppercase">Spectrum</span>
+<span class="font-body-md text-body-md text-on-surface">Optimal (Veg)</span>
+</div>
+</div>
+</div>
+<!-- Card 5: Healthy -->
+<div class="bg-surface-container rounded-xl p-md border border-outline-variant hover:bg-surface-container-high transition-colors flex flex-col gap-md group">
+<div class="flex justify-between items-start">
+<div class="flex items-center gap-sm">
+<div class="w-10 h-10 rounded-DEFAULT bg-surface-variant flex items-center justify-center">
+<span class="material-symbols-outlined text-on-surface-variant" data-icon="water_drop">water_drop</span>
+</div>
+<div>
+<h3 class="font-h2 text-h2 text-on-surface">Irrigation Valve B</h3>
+<p class="font-label-md text-label-md text-on-surface-variant">Zone 4 - Substrate</p>
+</div>
+</div>
+<span class="px-sm py-[2px] rounded-full bg-primary-fixed-dim/20 text-primary-fixed-dim font-label-md text-label-md border border-primary-fixed-dim/30">Active</span>
+</div>
+<div class="flex flex-col gap-unit">
+<div class="flex justify-between items-end">
+<span class="font-label-md text-label-md text-on-surface-variant">System Health</span>
+<span class="font-body-md text-body-md font-bold text-primary">95%</span>
+</div>
+<div class="w-full h-unit bg-surface-variant rounded-full overflow-hidden">
+<div class="h-full bg-primary rounded-full w-[95%]"></div>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-sm pt-sm border-t border-surface-variant">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface-variant uppercase">Moisture Level</span>
+<span class="font-body-md text-body-md text-on-surface">62% (Target 60%)</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface-variant uppercase">Pressure</span>
+<span class="font-body-md text-body-md text-on-surface">Normal</span>
+</div>
+</div>
+</div>
+</section>
+</main>
+</body></html>

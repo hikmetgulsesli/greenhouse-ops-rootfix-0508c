@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Greenhouse Ops - Maintenance Logs</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "error": "#ffb4ab",
+                    "inverse-surface": "#e1e2ec",
+                    "outline-variant": "#424754",
+                    "primary-fixed-dim": "#adc6ff",
+                    "on-background": "#e1e2ec",
+                    "surface-container": "#1d2027",
+                    "surface-container-lowest": "#0b0e15",
+                    "on-primary-container": "#00285d",
+                    "primary-fixed": "#d8e2ff",
+                    "tertiary-container": "#df7412",
+                    "primary-container": "#4d8eff",
+                    "surface": "#10131a",
+                    "surface-container-high": "#272a31",
+                    "on-secondary-fixed": "#0d1c2d",
+                    "error-container": "#93000a",
+                    "on-tertiary-container": "#461f00",
+                    "outline": "#8c909f",
+                    "on-error": "#690005",
+                    "secondary-fixed-dim": "#b9c8de",
+                    "on-primary-fixed-variant": "#004395",
+                    "tertiary": "#ffb786",
+                    "surface-bright": "#363941",
+                    "surface-container-low": "#191b23",
+                    "on-tertiary-fixed": "#311400",
+                    "secondary": "#b9c8de",
+                    "surface-tint": "#adc6ff",
+                    "secondary-fixed": "#d4e4fa",
+                    "background": "#10131a",
+                    "on-secondary": "#233143",
+                    "on-secondary-fixed-variant": "#39485a",
+                    "surface-variant": "#32353c",
+                    "on-surface-variant": "#c2c6d6",
+                    "on-error-container": "#ffdad6",
+                    "secondary-container": "#39485a",
+                    "on-surface": "#e1e2ec",
+                    "tertiary-fixed": "#ffdcc6",
+                    "inverse-primary": "#005ac2",
+                    "surface-dim": "#10131a",
+                    "inverse-on-surface": "#2e3038",
+                    "on-primary": "#002e6a",
+                    "on-tertiary": "#502400",
+                    "primary": "#adc6ff",
+                    "surface-container-highest": "#32353c",
+                    "on-secondary-container": "#a7b6cc",
+                    "on-primary-fixed": "#001a42",
+                    "tertiary-fixed-dim": "#ffb786",
+                    "on-tertiary-fixed-variant": "#723600"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "spacing": {
+                    "touch-target": "44px",
+                    "gutter": "20px",
+                    "lg": "24px",
+                    "xl": "32px",
+                    "sm": "8px",
+                    "md": "16px",
+                    "margin": "24px",
+                    "unit": "4px",
+                    "xs": "4px"
+            },
+            "fontFamily": {
+                    "body-lg": ["Inter"],
+                    "code": ["monospace"],
+                    "label-md": ["Inter"],
+                    "h1": ["Inter"],
+                    "h2": ["Inter"],
+                    "display": ["Inter"],
+                    "body-md": ["Inter"]
+            },
+            "fontSize": {
+                    "body-lg": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                    "code": ["13px", {"lineHeight": "18px", "fontWeight": "400"}],
+                    "label-md": ["12px", {"lineHeight": "16px", "letterSpacing": "0.05em", "fontWeight": "500"}],
+                    "h1": ["24px", {"lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "600"}],
+                    "h2": ["20px", {"lineHeight": "28px", "fontWeight": "600"}],
+                    "display": ["30px", {"lineHeight": "38px", "letterSpacing": "-0.02em", "fontWeight": "600"}],
+                    "body-md": ["14px", {"lineHeight": "20px", "fontWeight": "400"}]
+            }
+          }
+        }
+      }
+    </script>
+<style>
+        body { font-family: 'Inter', sans-serif; }
+    </style>
+</head>
+<body class="bg-background text-on-background min-h-screen font-body-md">
+<!-- TopAppBar -->
+<header class="fixed top-0 right-0 w-[calc(100%-16rem)] bg-surface dark:bg-surface-dim flex justify-between items-center h-touch-target px-lg py-md z-20">
+<div>
+<h1 class="font-h1 text-h1 text-on-surface">Logs</h1>
+</div>
+<div class="flex items-center space-x-md">
+<div class="relative hidden md:block">
+<span class="material-symbols-outlined absolute left-sm top-1/2 transform -translate-y-1/2 text-on-surface-variant font-body-md">search</span>
+<input class="bg-surface-container-high border border-outline-variant text-on-surface placeholder-on-surface-variant rounded-DEFAULT pl-xl pr-sm py-xs focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary h-touch-target w-64 font-body-md text-body-md" placeholder="Search logs..." type="text"/>
+</div>
+<button class="h-touch-target w-touch-target flex items-center justify-center text-on-surface-variant hover:text-primary transition-all hover:bg-surface-container-high rounded-full">
+<span class="material-symbols-outlined">sync</span>
+</button>
+<button class="h-touch-target w-touch-target flex items-center justify-center text-on-surface-variant hover:text-primary transition-all hover:bg-surface-container-high rounded-full">
+<span class="material-symbols-outlined">account_circle</span>
+</button>
+</div>
+</header>
+<!-- SideNavBar -->
+<nav class="fixed left-0 top-0 h-full w-64 bg-surface-container dark:bg-surface-container flex flex-col py-md px-sm z-30 border-r border-surface-container-low">
+<div class="mb-xl px-md">
+<h2 class="font-h2 text-h2 text-primary">Greenhouse Ops</h2>
+<p class="font-label-md text-label-md text-on-surface-variant mt-xs">Maintenance Console</p>
+</div>
+<button class="w-full bg-primary text-on-primary font-label-md text-label-md h-touch-target rounded-DEFAULT mb-xl flex items-center justify-center hover:bg-primary-fixed transition-colors">
+<span class="material-symbols-outlined mr-sm">add</span>
+            Create Task
+        </button>
+<ul class="space-y-sm flex-1">
+<li>
+<a class="flex items-center space-x-md px-md h-touch-target rounded-DEFAULT text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-body-md text-body-md" href="#">
+<span class="material-symbols-outlined">dashboard</span>
+<span>Dashboard</span>
+</a>
+</li>
+<li>
+<a class="flex items-center space-x-md px-md h-touch-target rounded-DEFAULT text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-body-md text-body-md" href="#">
+<span class="material-symbols-outlined">assignment</span>
+<span>Task Board</span>
+</a>
+</li>
+<li>
+<a class="flex items-center space-x-md px-md h-touch-target rounded-DEFAULT text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-body-md text-body-md" href="#">
+<span class="material-symbols-outlined">precision_manufacturing</span>
+<span>Equipment</span>
+</a>
+</li>
+<li>
+<a class="flex items-center space-x-md px-md h-touch-target rounded-DEFAULT text-primary font-bold border-r-2 border-primary bg-surface-container-high hover:bg-surface-container-high hover:text-on-surface transition-colors font-body-md text-body-md opacity-80" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">database</span>
+<span>Logs</span>
+</a>
+</li>
+</ul>
+<div class="mt-auto px-md">
+<img alt="User profile" class="w-8 h-8 rounded-full border border-outline-variant object-cover" data-alt="A small circular profile picture of an industrial technician wearing safety gear in a modern facility. The lighting is slightly moody, reflecting the dark mode aesthetic of the enterprise dashboard. High contrast, professional portrait style fitting an operations center UI." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDFOIUqCeM9vpswPjXivqc6XYVymoLt8y8BONuHaG39-V6xpZXk0UzNZkU2XGlfKPs1NdYRaHmK426YnOdpzwRPM8gcAhEdnwkJLItg_8pQcvd0sUsykDr5vnpKK6zy23LP2ab_L3v1OxP2hW5GfANE1e_LTpKacyHnE-uhe2l4D40gTDOohaE8fSwpyhLx0XNP87BYNFIOVrVDTiERlHoUpACJN9ydPIFCAIv82-9on3vqI160TIx_WvGn35woSeniSZvOrxY0OMc"/>
+</div>
+</nav>
+<!-- Main Content -->
+<main class="ml-64 mt-touch-target p-gutter pb-xl min-h-[calc(100vh-44px)]">
+<!-- Controls -->
+<div class="flex flex-col md:flex-row justify-between items-start md:items-center mb-lg gap-md">
+<div class="flex items-center space-x-md">
+<button class="h-touch-target px-md flex items-center justify-center bg-surface-container-high border border-outline-variant rounded-DEFAULT text-on-surface font-label-md text-label-md hover:bg-surface-variant transition-colors">
+<span class="material-symbols-outlined mr-sm text-on-surface-variant">filter_list</span>
+                    Filter
+                </button>
+<div class="flex items-center bg-surface-container-high border border-outline-variant rounded-DEFAULT h-touch-target px-md">
+<span class="material-symbols-outlined text-on-surface-variant mr-sm">calendar_today</span>
+<span class="font-body-md text-body-md text-on-surface">Oct 24, 2023 - Oct 31, 2023</span>
+</div>
+</div>
+<button class="h-touch-target px-md flex items-center justify-center border border-outline-variant rounded-DEFAULT text-on-surface font-label-md text-label-md hover:bg-surface-container-high transition-colors">
+<span class="material-symbols-outlined mr-sm text-on-surface-variant">download</span>
+                Export CSV
+            </button>
+</div>
+<!-- Data Table Container -->
+<div class="bg-surface rounded-lg border border-surface-container-low overflow-hidden">
+<div class="overflow-x-auto">
+<table class="w-full text-left border-collapse">
+<thead>
+<tr class="bg-surface-container-lowest border-b border-surface-container-low">
+<th class="p-sm font-label-md text-label-md text-on-surface-variant whitespace-nowrap">Date/Time</th>
+<th class="p-sm font-label-md text-label-md text-on-surface-variant whitespace-nowrap">Equipment</th>
+<th class="p-sm font-label-md text-label-md text-on-surface-variant whitespace-nowrap">Action Taken</th>
+<th class="p-sm font-label-md text-label-md text-on-surface-variant whitespace-nowrap">Technician</th>
+<th class="p-sm font-label-md text-label-md text-on-surface-variant whitespace-nowrap">Status</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-surface-container-low font-code text-code">
+<tr class="hover:bg-surface-container-lowest transition-colors">
+<td class="p-sm text-on-surface">2023-10-31 08:15</td>
+<td class="p-sm">
+<div class="flex flex-col">
+<span class="text-on-surface font-medium">GH-PUMP-04</span>
+<span class="text-on-surface-variant text-[10px]">Zone A Irrigation</span>
+</div>
+</td>
+<td class="p-sm text-on-surface">Replaced primary seal; recalibrated flow sensor.</td>
+<td class="p-sm text-on-surface-variant">J. Miller</td>
+<td class="p-sm">
+<span class="inline-flex items-center px-xs py-[2px] rounded-DEFAULT bg-primary/10 text-primary font-label-md text-[10px]">
+<span class="w-1.5 h-1.5 rounded-full bg-primary mr-1"></span> Completed
+                                </span>
+</td>
+</tr>
+<tr class="hover:bg-surface-container-lowest transition-colors">
+<td class="p-sm text-on-surface">2023-10-30 14:30</td>
+<td class="p-sm">
+<div class="flex flex-col">
+<span class="text-on-surface font-medium">HVAC-UNIT-12</span>
+<span class="text-on-surface-variant text-[10px]">Climate Control C</span>
+</div>
+</td>
+<td class="p-sm text-on-surface">Routine filter replacement and coolant level check.</td>
+<td class="p-sm text-on-surface-variant">S. Chen</td>
+<td class="p-sm">
+<span class="inline-flex items-center px-xs py-[2px] rounded-DEFAULT bg-primary/10 text-primary font-label-md text-[10px]">
+<span class="w-1.5 h-1.5 rounded-full bg-primary mr-1"></span> Completed
+                                </span>
+</td>
+</tr>
+<tr class="hover:bg-surface-container-lowest transition-colors">
+<td class="p-sm text-on-surface">2023-10-30 09:45</td>
+<td class="p-sm">
+<div class="flex flex-col">
+<span class="text-on-surface font-medium">SENS-HUM-09</span>
+<span class="text-on-surface-variant text-[10px]">Zone B Monitoring</span>
+</div>
+</td>
+<td class="p-sm text-on-surface">Attempted recalibration; sensor unresponsive. Hardware swap required.</td>
+<td class="p-sm text-on-surface-variant">A. Torres</td>
+<td class="p-sm">
+<span class="inline-flex items-center px-xs py-[2px] rounded-DEFAULT bg-error/10 text-error font-label-md text-[10px]">
+<span class="w-1.5 h-1.5 rounded-full bg-error mr-1"></span> Failed
+                                </span>
+</td>
+</tr>
+<tr class="hover:bg-surface-container-lowest transition-colors">
+<td class="p-sm text-on-surface">2023-10-29 16:20</td>
+<td class="p-sm">
+<div class="flex flex-col">
+<span class="text-on-surface font-medium">GH-VALVE-22</span>
+<span class="text-on-surface-variant text-[10px]">Nutrient Line D</span>
+</div>
+</td>
+<td class="p-sm text-on-surface">Cleared blockage in primary feed line; tested flow rate.</td>
+<td class="p-sm text-on-surface-variant">J. Miller</td>
+<td class="p-sm">
+<span class="inline-flex items-center px-xs py-[2px] rounded-DEFAULT bg-primary/10 text-primary font-label-md text-[10px]">
+<span class="w-1.5 h-1.5 rounded-full bg-primary mr-1"></span> Completed
+                                </span>
+</td>
+</tr>
+<tr class="hover:bg-surface-container-lowest transition-colors">
+<td class="p-sm text-on-surface">2023-10-28 11:10</td>
+<td class="p-sm">
+<div class="flex flex-col">
+<span class="text-on-surface font-medium">LIGHT-ARRAY-05</span>
+<span class="text-on-surface-variant text-[10px]">Grow Zone A</span>
+</div>
+</td>
+<td class="p-sm text-on-surface">Replaced 3 faulty LED modules; updated firmware on controller.</td>
+<td class="p-sm text-on-surface-variant">K. Davis</td>
+<td class="p-sm">
+<span class="inline-flex items-center px-xs py-[2px] rounded-DEFAULT bg-primary/10 text-primary font-label-md text-[10px]">
+<span class="w-1.5 h-1.5 rounded-full bg-primary mr-1"></span> Completed
+                                </span>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- Pagination Footer -->
+<div class="bg-surface-container-lowest border-t border-surface-container-low p-sm flex items-center justify-between">
+<span class="font-label-md text-label-md text-on-surface-variant">Showing 1-5 of 142 entries</span>
+<div class="flex space-x-xs">
+<button class="h-8 w-8 flex items-center justify-center rounded-DEFAULT text-on-surface-variant hover:bg-surface-container-high transition-colors disabled:opacity-50" disabled="">
+<span class="material-symbols-outlined text-[18px]">chevron_left</span>
+</button>
+<button class="h-8 w-8 flex items-center justify-center rounded-DEFAULT bg-surface-container-high text-primary font-label-md text-label-md">1</button>
+<button class="h-8 w-8 flex items-center justify-center rounded-DEFAULT text-on-surface hover:bg-surface-container-high transition-colors font-label-md text-label-md">2</button>
+<button class="h-8 w-8 flex items-center justify-center rounded-DEFAULT text-on-surface hover:bg-surface-container-high transition-colors font-label-md text-label-md">3</button>
+<span class="h-8 w-8 flex items-center justify-center text-on-surface-variant">...</span>
+<button class="h-8 w-8 flex items-center justify-center rounded-DEFAULT text-on-surface hover:bg-surface-container-high transition-colors font-label-md text-label-md">29</button>
+<button class="h-8 w-8 flex items-center justify-center rounded-DEFAULT text-on-surface hover:bg-surface-container-high transition-colors">
+<span class="material-symbols-outlined text-[18px]">chevron_right</span>
+</button>
+</div>
+</div>
+</div>
+</main>
+</body></html>

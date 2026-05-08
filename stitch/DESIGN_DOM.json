@@ -1,0 +1,4553 @@
+{
+  "generatedAt": "2026-05-08T08:33:55.918Z",
+  "screenCount": 9,
+  "screens": {
+    "00ad43aaa8cb40098e866fbb396f7357": {
+      "screenId": "00ad43aaa8cb40098e866fbb396f7357",
+      "materialSymbolsRequired": true,
+      "sections": [
+        {
+          "tag": "nav",
+          "layout": "flex-col",
+          "classes": [
+            "bg-surface-container",
+            "dark:bg-surface-container",
+            "fixed",
+            "left-0",
+            "top-0",
+            "h-full",
+            "w-64",
+            "bg-surface-container-low",
+            "flex",
+            "flex-col"
+          ],
+          "childCount": 6
+        },
+        {
+          "tag": "main",
+          "layout": "flex-col",
+          "classes": [
+            "ml-64",
+            "flex-1",
+            "flex",
+            "flex-col",
+            "min-h-screen",
+            "pb-xl"
+          ],
+          "childCount": 46
+        }
+      ],
+      "buttons": [
+        {
+          "kind": "button",
+          "label": "Create Task",
+          "classes": [
+            "w-full",
+            "flex",
+            "items-center",
+            "justify-center",
+            "gap-sm",
+            "bg-primary",
+            "text-on-primary",
+            "font-label-md",
+            "text-label-md",
+            "rounded-lg",
+            "min-h-touch-target",
+            "hover:bg-primary-fixed",
+            "transition-colors"
+          ],
+          "icon": "add",
+          "action": "create",
+          "expectedBehavior": "open create flow or add a new item/state"
+        },
+        {
+          "kind": "button",
+          "label": "sync",
+          "classes": [
+            "text-on-surface-variant",
+            "hover:text-primary",
+            "transition-all",
+            "flex",
+            "items-center",
+            "justify-center",
+            "min-w-touch-target",
+            "min-h-touch-target",
+            "rounded-full",
+            "hover:bg-surface-container"
+          ],
+          "icon": "sync",
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "account_circle",
+          "classes": [
+            "text-on-surface-variant",
+            "hover:text-primary",
+            "transition-all",
+            "flex",
+            "items-center",
+            "justify-center",
+            "min-w-touch-target",
+            "min-h-touch-target",
+            "rounded-full",
+            "hover:bg-surface-container"
+          ],
+          "icon": "account_circle",
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "This Week",
+          "classes": [
+            "font-label-md",
+            "text-label-md",
+            "text-primary",
+            "flex",
+            "items-center",
+            "gap-xs",
+            "hover:text-primary-fixed",
+            "transition-colors"
+          ],
+          "icon": "arrow_drop_down",
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "more_vert",
+          "classes": [
+            "min-w-touch-target",
+            "min-h-touch-target",
+            "rounded-full",
+            "hover:bg-surface-container",
+            "flex",
+            "items-center",
+            "justify-center",
+            "text-on-surface-variant"
+          ],
+          "icon": "more_vert",
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "View All Activity",
+          "classes": [
+            "w-full",
+            "mt-md",
+            "py-sm",
+            "font-label-md",
+            "text-label-md",
+            "text-primary",
+            "hover:bg-surface-container",
+            "rounded",
+            "transition-colors",
+            "text-center"
+          ],
+          "icon": null,
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "Greenhouse Ops Maintenance Console",
+          "classes": [],
+          "icon": null,
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        }
+      ],
+      "inputs": [],
+      "navLinks": [
+        {
+          "kind": "link",
+          "label": "dashboard",
+          "href": "#",
+          "classes": [
+            "font-body-md",
+            "text-body-md"
+          ],
+          "icon": "dashboard",
+          "action": "navigate",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "Task Board",
+          "href": "#",
+          "classes": [
+            "font-body-md",
+            "text-body-md"
+          ],
+          "icon": "assignment",
+          "action": "navigate",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "Equipment",
+          "href": "#",
+          "classes": [
+            "font-body-md",
+            "text-body-md"
+          ],
+          "icon": "precision_manufacturing",
+          "action": "navigate",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "Logs",
+          "href": "#",
+          "classes": [
+            "font-body-md",
+            "text-body-md"
+          ],
+          "icon": "database",
+          "action": "navigate",
+          "expectedBehavior": "navigate:#"
+        }
+      ],
+      "cards": [],
+      "icons": [
+        "dashboard",
+        "assignment",
+        "precision_manufacturing",
+        "database",
+        "add",
+        "sync",
+        "account_circle",
+        "health_and_safety",
+        "warning",
+        "arrow_drop_down",
+        "more_vert",
+        "build",
+        "assignment_turned_in",
+        "update"
+      ],
+      "images": [],
+      "cssVars": {},
+      "colorPalette": {
+        "error": "#ffb4ab",
+        "inverse-surface": "#e1e2ec",
+        "outline-variant": "#424754",
+        "primary-fixed-dim": "#adc6ff",
+        "on-background": "#e1e2ec",
+        "surface-container": "#1d2027",
+        "surface-container-lowest": "#0b0e15",
+        "on-primary-container": "#00285d",
+        "primary-fixed": "#d8e2ff",
+        "tertiary-container": "#df7412",
+        "primary-container": "#4d8eff",
+        "surface": "#10131a",
+        "surface-container-high": "#272a31",
+        "on-secondary-fixed": "#0d1c2d",
+        "error-container": "#93000a",
+        "on-tertiary-container": "#461f00",
+        "outline": "#8c909f",
+        "on-error": "#690005",
+        "secondary-fixed-dim": "#b9c8de",
+        "on-primary-fixed-variant": "#004395",
+        "tertiary": "#ffb786",
+        "surface-bright": "#363941",
+        "surface-container-low": "#191b23",
+        "on-tertiary-fixed": "#311400",
+        "secondary": "#b9c8de",
+        "surface-tint": "#adc6ff",
+        "secondary-fixed": "#d4e4fa",
+        "background": "#10131a",
+        "on-secondary": "#233143",
+        "on-secondary-fixed-variant": "#39485a",
+        "surface-variant": "#32353c",
+        "on-surface-variant": "#c2c6d6",
+        "on-error-container": "#ffdad6",
+        "secondary-container": "#39485a",
+        "on-surface": "#e1e2ec",
+        "tertiary-fixed": "#ffdcc6",
+        "inverse-primary": "#005ac2",
+        "surface-dim": "#10131a",
+        "inverse-on-surface": "#2e3038",
+        "on-primary": "#002e6a",
+        "on-tertiary": "#502400",
+        "primary": "#adc6ff",
+        "surface-container-highest": "#32353c",
+        "on-secondary-container": "#a7b6cc",
+        "on-primary-fixed": "#001a42",
+        "tertiary-fixed-dim": "#ffb786",
+        "on-tertiary-fixed-variant": "#723600"
+      },
+      "fonts": [
+        "Material Symbols Outlined",
+        "Inter"
+      ],
+      "layoutHints": {
+        "gridCols": 1,
+        "flexDirection": "col"
+      },
+      "behaviorContract": [
+        {
+          "kind": "link",
+          "label": "dashboard",
+          "icon": "dashboard",
+          "route": "#",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "Task Board",
+          "icon": "assignment",
+          "route": "#",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "Equipment",
+          "icon": "precision_manufacturing",
+          "route": "#",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "Logs",
+          "icon": "database",
+          "route": "#",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "button",
+          "label": "Create Task",
+          "icon": "add",
+          "action": "create",
+          "expectedBehavior": "open create flow or add a new item/state"
+        },
+        {
+          "kind": "button",
+          "label": "sync",
+          "icon": "sync",
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "account_circle",
+          "icon": "account_circle",
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "This Week",
+          "icon": "arrow_drop_down",
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "more_vert",
+          "icon": "more_vert",
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "View All Activity",
+          "icon": null,
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "Greenhouse Ops Maintenance Console",
+          "icon": null,
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        }
+      ],
+      "tabBar": [
+        {
+          "kind": "button",
+          "label": "Greenhouse Ops Maintenance Console",
+          "icon": null,
+          "active": true
+        },
+        {
+          "kind": "link",
+          "label": "dashboard",
+          "icon": "dashboard",
+          "route": "#",
+          "active": true
+        },
+        {
+          "kind": "link",
+          "label": "Task Board",
+          "icon": "assignment",
+          "route": "#",
+          "active": false
+        },
+        {
+          "kind": "link",
+          "label": "Equipment",
+          "icon": "precision_manufacturing",
+          "route": "#",
+          "active": false
+        },
+        {
+          "kind": "link",
+          "label": "Logs",
+          "icon": "database",
+          "route": "#",
+          "active": false
+        },
+        {
+          "kind": "button",
+          "label": "Create Task",
+          "icon": "add",
+          "active": true
+        }
+      ],
+      "title": "Dashboard"
+    },
+    "196b9bdfb93a4e94a3902d8f815b79e7": {
+      "screenId": "196b9bdfb93a4e94a3902d8f815b79e7",
+      "materialSymbolsRequired": true,
+      "sections": [
+        {
+          "tag": "aside",
+          "layout": "flex-col",
+          "classes": [
+            "fixed",
+            "left-0",
+            "top-0",
+            "h-full",
+            "w-64",
+            "bg-surface-container",
+            "flex",
+            "flex-col",
+            "py-md",
+            "px-sm"
+          ],
+          "childCount": 1
+        },
+        {
+          "tag": "header",
+          "layout": "flex-row",
+          "classes": [
+            "fixed",
+            "top-0",
+            "right-0",
+            "w-[calc(100%-16rem)]",
+            "bg-surface",
+            "flex",
+            "justify-between",
+            "items-center",
+            "h-[64px]",
+            "px-lg"
+          ],
+          "childCount": 3
+        },
+        {
+          "tag": "main",
+          "layout": "block",
+          "classes": [
+            "ml-64",
+            "mt-[64px]",
+            "p-xl",
+            "w-full",
+            "h-[calc(100vh-64px)]",
+            "overflow-hidden"
+          ],
+          "childCount": 19
+        },
+        {
+          "tag": "section",
+          "layout": "flex-col",
+          "classes": [
+            "fixed",
+            "inset-y-0",
+            "right-0",
+            "w-full",
+            "max-w-sm",
+            "bg-surface",
+            "flex",
+            "flex-col",
+            "z-50",
+            "border-l"
+          ],
+          "childCount": 13
+        }
+      ],
+      "buttons": [
+        {
+          "kind": "button",
+          "label": "Create Task",
+          "classes": [
+            "mx-md",
+            "mb-xl",
+            "h-touch-target",
+            "bg-primary-container",
+            "text-on-primary-container",
+            "font-label-md",
+            "text-label-md",
+            "rounded-lg",
+            "flex",
+            "items-center",
+            "justify-center",
+            "gap-sm",
+            "hover:opacity-90",
+            "transition-opacity"
+          ],
+          "icon": "add",
+          "action": "create",
+          "expectedBehavior": "open create flow or add a new item/state"
+        },
+        {
+          "kind": "button",
+          "label": "sync",
+          "classes": [
+            "h-touch-target",
+            "w-touch-target",
+            "flex",
+            "items-center",
+            "justify-center",
+            "text-on-surface-variant",
+            "hover:text-primary",
+            "transition-all",
+            "rounded-full",
+            "hover:bg-surface-container-high"
+          ],
+          "icon": "sync",
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "account_circle",
+          "classes": [
+            "h-touch-target",
+            "w-touch-target",
+            "flex",
+            "items-center",
+            "justify-center",
+            "text-primary",
+            "transition-all",
+            "bg-surface-container-highest",
+            "rounded-full",
+            "border",
+            "border-primary/20"
+          ],
+          "icon": "account_circle",
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "Close Profile Panel",
+          "classes": [
+            "h-touch-target",
+            "w-touch-target",
+            "flex",
+            "items-center",
+            "justify-center",
+            "text-on-surface-variant",
+            "hover:text-on-surface",
+            "hover:bg-surface-container-high",
+            "rounded-full",
+            "transition-colors",
+            "focus:outline-none",
+            "focus:ring-2",
+            "focus:ring-primary"
+          ],
+          "icon": "close",
+          "action": "dismiss",
+          "expectedBehavior": "close dialog/panel or return to previous state"
+        },
+        {
+          "kind": "button",
+          "label": "Edit Avatar",
+          "classes": [
+            "absolute",
+            "bottom-0",
+            "right-0",
+            "w-8",
+            "h-8",
+            "bg-surface-container-high",
+            "border",
+            "border-outline-variant",
+            "rounded-full",
+            "flex",
+            "items-center",
+            "justify-center",
+            "text-on-surface-variant",
+            "hover:text-primary",
+            "hover:border-primary",
+            "transition-colors",
+            "focus:outline-none",
+            "focus:ring-2",
+            "focus:ring-primary",
+            "shadow-lg"
+          ],
+          "icon": "edit",
+          "action": "edit",
+          "expectedBehavior": "open edit flow or update selected item/state"
+        },
+        {
+          "kind": "button",
+          "label": "Toggle Email Notifications",
+          "classes": [
+            "w-[44px]",
+            "h-[24px]",
+            "bg-primary",
+            "rounded-full",
+            "relative",
+            "shrink-0",
+            "focus:outline-none",
+            "focus:ring-2",
+            "focus:ring-primary",
+            "focus:ring-offset-2",
+            "focus:ring-offset-surface",
+            "transition-colors",
+            "cursor-pointer"
+          ],
+          "icon": null,
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "Toggle Push Notifications",
+          "classes": [
+            "w-[44px]",
+            "h-[24px]",
+            "bg-surface-container-highest",
+            "border",
+            "border-outline-variant",
+            "rounded-full",
+            "relative",
+            "shrink-0",
+            "focus:outline-none",
+            "focus:ring-2",
+            "focus:ring-primary",
+            "focus:ring-offset-2",
+            "focus:ring-offset-surface",
+            "transition-colors",
+            "cursor-pointer",
+            "hover:bg-surface-container-high"
+          ],
+          "icon": null,
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "Toggle SMS Alerts",
+          "classes": [
+            "w-[44px]",
+            "h-[24px]",
+            "bg-primary",
+            "rounded-full",
+            "relative",
+            "shrink-0",
+            "focus:outline-none",
+            "focus:ring-2",
+            "focus:ring-primary",
+            "focus:ring-offset-2",
+            "focus:ring-offset-surface",
+            "transition-colors",
+            "cursor-pointer"
+          ],
+          "icon": null,
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "Manage Account Settings",
+          "classes": [
+            "w-full",
+            "h-touch-target",
+            "flex",
+            "items-center",
+            "justify-between",
+            "px-md",
+            "border",
+            "border-outline-variant",
+            "rounded-lg",
+            "hover:bg-surface-container-high",
+            "focus:outline-none",
+            "focus:ring-2",
+            "focus:ring-primary",
+            "transition-colors",
+            "text-on-surface",
+            "font-body-md",
+            "text-body-md",
+            "group"
+          ],
+          "icon": "arrow_forward",
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "logout",
+          "classes": [
+            "w-full",
+            "h-touch-target",
+            "flex",
+            "items-center",
+            "justify-center",
+            "gap-sm",
+            "border",
+            "border-outline-variant",
+            "bg-surface",
+            "text-error",
+            "rounded-lg",
+            "hover:bg-error-container/10",
+            "focus:outline-none",
+            "focus:ring-2",
+            "focus:ring-error",
+            "transition-colors",
+            "font-label-md",
+            "text-label-md"
+          ],
+          "icon": "logout",
+          "action": "navigate",
+          "expectedBehavior": "navigate:/logout",
+          "expectedRoute": "/logout",
+          "routeInferred": true
+        }
+      ],
+      "inputs": [
+        {
+          "kind": "input",
+          "type": "text",
+          "label": "Search operations...",
+          "placeholder": "Search operations...",
+          "name": "",
+          "classes": [
+            "w-full",
+            "h-touch-target",
+            "bg-surface-container",
+            "border",
+            "border-outline-variant",
+            "rounded-lg",
+            "pl-xl",
+            "pr-md",
+            "text-on-surface",
+            "font-body-md",
+            "text-body-md",
+            "placeholder-on-surface-variant",
+            "focus:outline-none",
+            "focus:border-primary",
+            "focus:ring-1",
+            "focus:ring-primary",
+            "transition-all"
+          ],
+          "expectedBehavior": "controlled value with onChange; validation if required by PRD"
+        }
+      ],
+      "navLinks": [
+        {
+          "kind": "link",
+          "label": "dashboard",
+          "href": "#",
+          "classes": [
+            "material-symbols-outlined"
+          ],
+          "icon": "dashboard",
+          "action": "navigate",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "Task Board",
+          "href": "#",
+          "classes": [
+            "material-symbols-outlined"
+          ],
+          "icon": "assignment",
+          "action": "navigate",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "Equipment",
+          "href": "#",
+          "classes": [
+            "material-symbols-outlined"
+          ],
+          "icon": "precision_manufacturing",
+          "action": "navigate",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "Logs",
+          "href": "#",
+          "classes": [
+            "material-symbols-outlined"
+          ],
+          "icon": "database",
+          "action": "navigate",
+          "expectedBehavior": "navigate:#"
+        }
+      ],
+      "cards": [],
+      "icons": [
+        "add",
+        "dashboard",
+        "assignment",
+        "precision_manufacturing",
+        "database",
+        "search",
+        "sync",
+        "account_circle",
+        "close",
+        "edit",
+        "admin_panel_settings",
+        "arrow_forward",
+        "logout"
+      ],
+      "images": [
+        {
+          "src": "https://lh3.googleusercontent.com/aida-public/AB6AXuA3dGeaMu2biFaqNJEWLj4sy60QBFRglGZA85a5KKicWDPRhjCPpQSF4CPPKgayEH9W159IgUsdNpv3Mz2UDOBXCmmCqC1rS3Y5bSXaYRlPuH_FEaRz8SYtDt2XBHAMyXfz_t0bXCzy002G5hXd_z",
+          "alt": "A professional headshot of a confident male operations manager in his late 30s. He is wearing a dark, utilitarian button-down shirt. The lighting is crisp and cool, reflecting a modern, high-tech industrial environment. The background is a soft, out-of-focus deep blue and slate grey, complementing the dark mode UI aesthetic."
+        }
+      ],
+      "cssVars": {},
+      "colorPalette": {
+        "error": "#ffb4ab",
+        "inverse-surface": "#e1e2ec",
+        "outline-variant": "#424754",
+        "primary-fixed-dim": "#adc6ff",
+        "on-background": "#e1e2ec",
+        "surface-container": "#1d2027",
+        "surface-container-lowest": "#0b0e15",
+        "on-primary-container": "#00285d",
+        "primary-fixed": "#d8e2ff",
+        "tertiary-container": "#df7412",
+        "primary-container": "#4d8eff",
+        "surface": "#10131a",
+        "surface-container-high": "#272a31",
+        "on-secondary-fixed": "#0d1c2d",
+        "error-container": "#93000a",
+        "on-tertiary-container": "#461f00",
+        "outline": "#8c909f",
+        "on-error": "#690005",
+        "secondary-fixed-dim": "#b9c8de",
+        "on-primary-fixed-variant": "#004395",
+        "tertiary": "#ffb786",
+        "surface-bright": "#363941",
+        "surface-container-low": "#191b23",
+        "on-tertiary-fixed": "#311400",
+        "secondary": "#b9c8de",
+        "surface-tint": "#adc6ff",
+        "secondary-fixed": "#d4e4fa",
+        "background": "#10131a",
+        "on-secondary": "#233143",
+        "on-secondary-fixed-variant": "#39485a",
+        "surface-variant": "#32353c",
+        "on-surface-variant": "#c2c6d6",
+        "on-error-container": "#ffdad6",
+        "secondary-container": "#39485a",
+        "on-surface": "#e1e2ec",
+        "tertiary-fixed": "#ffdcc6",
+        "inverse-primary": "#005ac2",
+        "surface-dim": "#10131a",
+        "inverse-on-surface": "#2e3038",
+        "on-primary": "#002e6a",
+        "on-tertiary": "#502400",
+        "primary": "#adc6ff",
+        "surface-container-highest": "#32353c",
+        "on-secondary-container": "#a7b6cc",
+        "on-primary-fixed": "#001a42",
+        "tertiary-fixed-dim": "#ffb786",
+        "on-tertiary-fixed-variant": "#723600"
+      },
+      "fonts": [
+        "Inter",
+        "Material Symbols Outlined"
+      ],
+      "layoutHints": {
+        "gridCols": 12,
+        "flexDirection": "col"
+      },
+      "behaviorContract": [
+        {
+          "kind": "link",
+          "label": "dashboard",
+          "icon": "dashboard",
+          "route": "#",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "Task Board",
+          "icon": "assignment",
+          "route": "#",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "Equipment",
+          "icon": "precision_manufacturing",
+          "route": "#",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "Logs",
+          "icon": "database",
+          "route": "#",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "button",
+          "label": "Create Task",
+          "icon": "add",
+          "action": "create",
+          "expectedBehavior": "open create flow or add a new item/state"
+        },
+        {
+          "kind": "button",
+          "label": "sync",
+          "icon": "sync",
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "account_circle",
+          "icon": "account_circle",
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "Close Profile Panel",
+          "icon": "close",
+          "action": "dismiss",
+          "expectedBehavior": "close dialog/panel or return to previous state"
+        },
+        {
+          "kind": "button",
+          "label": "Edit Avatar",
+          "icon": "edit",
+          "action": "edit",
+          "expectedBehavior": "open edit flow or update selected item/state"
+        },
+        {
+          "kind": "button",
+          "label": "Toggle Email Notifications",
+          "icon": null,
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "Toggle Push Notifications",
+          "icon": null,
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "Toggle SMS Alerts",
+          "icon": null,
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "Manage Account Settings",
+          "icon": "arrow_forward",
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "logout",
+          "icon": "logout",
+          "action": "navigate",
+          "route": "/logout",
+          "expectedBehavior": "navigate:/logout"
+        },
+        {
+          "kind": "input",
+          "label": "Search operations...",
+          "type": "text",
+          "placeholder": "Search operations...",
+          "expectedBehavior": "controlled value with onChange; validation if required by PRD"
+        }
+      ],
+      "tabBar": [
+        {
+          "kind": "link",
+          "label": "dashboard",
+          "icon": "dashboard",
+          "route": "#",
+          "active": true
+        },
+        {
+          "kind": "link",
+          "label": "Task Board",
+          "icon": "assignment",
+          "route": "#",
+          "active": false
+        },
+        {
+          "kind": "link",
+          "label": "Equipment",
+          "icon": "precision_manufacturing",
+          "route": "#",
+          "active": false
+        },
+        {
+          "kind": "link",
+          "label": "Logs",
+          "icon": "database",
+          "route": "#",
+          "active": false
+        }
+      ],
+      "title": "Profile Panel"
+    },
+    "1cd5bf7dc5814c6eb502b3617dc25477": {
+      "screenId": "1cd5bf7dc5814c6eb502b3617dc25477",
+      "materialSymbolsRequired": true,
+      "sections": [
+        {
+          "tag": "nav",
+          "layout": "flex-row",
+          "classes": [
+            "hidden",
+            "md:flex",
+            "fixed",
+            "left-0",
+            "top-0",
+            "h-full",
+            "w-64",
+            "bg-surface-container",
+            "dark:bg-surface-container",
+            "flex"
+          ],
+          "childCount": 8
+        },
+        {
+          "tag": "header",
+          "layout": "flex-row",
+          "classes": [
+            "hidden",
+            "md:flex",
+            "fixed",
+            "top-0",
+            "right-0",
+            "w-[calc(100%-16rem)]",
+            "bg-surface",
+            "dark:bg-surface-dim",
+            "flex",
+            "justify-between"
+          ],
+          "childCount": 3
+        },
+        {
+          "tag": "main",
+          "layout": "flex-col",
+          "classes": [
+            "flex-1",
+            "md:ml-64",
+            "mt-[76px]",
+            "p-xl",
+            "flex",
+            "flex-col",
+            "gap-lg"
+          ],
+          "childCount": 63
+        }
+      ],
+      "buttons": [
+        {
+          "kind": "button",
+          "label": "Create Task",
+          "classes": [
+            "w-full",
+            "flex",
+            "items-center",
+            "justify-center",
+            "gap-sm",
+            "h-touch-target",
+            "bg-primary-container",
+            "text-on-primary-container",
+            "font-label-md",
+            "text-label-md",
+            "rounded-lg",
+            "hover:bg-primary",
+            "hover:text-on-primary",
+            "transition-colors",
+            "focus:outline-none",
+            "focus:ring-2",
+            "focus:ring-primary",
+            "focus:ring-offset-2",
+            "focus:ring-offset-surface-container"
+          ],
+          "icon": "add",
+          "action": "create",
+          "expectedBehavior": "open create flow or add a new item/state"
+        },
+        {
+          "kind": "button",
+          "label": "sync",
+          "classes": [
+            "w-touch-target",
+            "h-touch-target",
+            "flex",
+            "items-center",
+            "justify-center",
+            "rounded-full",
+            "text-on-surface-variant",
+            "hover:text-primary",
+            "hover:bg-surface-container-high",
+            "transition-all",
+            "active:scale-95",
+            "duration-150"
+          ],
+          "icon": "sync",
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "account_circle",
+          "classes": [
+            "w-touch-target",
+            "h-touch-target",
+            "flex",
+            "items-center",
+            "justify-center",
+            "rounded-full",
+            "text-on-surface-variant",
+            "hover:text-primary",
+            "hover:bg-surface-container-high",
+            "transition-all",
+            "active:scale-95",
+            "duration-150"
+          ],
+          "icon": "account_circle",
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "All Systems",
+          "classes": [
+            "px-md",
+            "h-touch-target",
+            "flex",
+            "items-center",
+            "justify-center",
+            "rounded-full",
+            "bg-primary-container",
+            "text-on-primary-container",
+            "font-label-md",
+            "text-label-md",
+            "font-bold",
+            "focus:outline-none",
+            "focus:ring-2",
+            "focus:ring-primary",
+            "focus:ring-offset-2",
+            "focus:ring-offset-background"
+          ],
+          "icon": null,
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "Healthy",
+          "classes": [
+            "px-md",
+            "h-touch-target",
+            "flex",
+            "items-center",
+            "justify-center",
+            "rounded-full",
+            "border",
+            "border-outline-variant",
+            "text-on-surface-variant",
+            "font-label-md",
+            "text-label-md",
+            "hover:bg-surface-container-high",
+            "transition-colors",
+            "focus:outline-none",
+            "focus:ring-2",
+            "focus:ring-primary",
+            "focus:ring-offset-2",
+            "focus:ring-offset-background"
+          ],
+          "icon": null,
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "Warning",
+          "classes": [
+            "px-md",
+            "h-touch-target",
+            "flex",
+            "items-center",
+            "justify-center",
+            "rounded-full",
+            "border",
+            "border-outline-variant",
+            "text-on-surface-variant",
+            "font-label-md",
+            "text-label-md",
+            "hover:bg-surface-container-high",
+            "transition-colors",
+            "focus:outline-none",
+            "focus:ring-2",
+            "focus:ring-primary",
+            "focus:ring-offset-2",
+            "focus:ring-offset-background"
+          ],
+          "icon": null,
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "Critical",
+          "classes": [
+            "px-md",
+            "h-touch-target",
+            "flex",
+            "items-center",
+            "justify-center",
+            "rounded-full",
+            "border",
+            "border-outline-variant",
+            "text-on-surface-variant",
+            "font-label-md",
+            "text-label-md",
+            "hover:bg-surface-container-high",
+            "transition-colors",
+            "focus:outline-none",
+            "focus:ring-2",
+            "focus:ring-primary",
+            "focus:ring-offset-2",
+            "focus:ring-offset-background"
+          ],
+          "icon": null,
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "eco",
+          "classes": [],
+          "icon": "eco",
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "Greenhouse Ops Maintenance Console",
+          "classes": [],
+          "icon": null,
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        }
+      ],
+      "inputs": [
+        {
+          "kind": "input",
+          "type": "text",
+          "label": "Search equipment...",
+          "placeholder": "Search equipment...",
+          "name": "",
+          "classes": [
+            "w-full",
+            "h-touch-target",
+            "pl-10",
+            "pr-4",
+            "bg-surface-container",
+            "text-on-surface",
+            "font-body-md",
+            "text-body-md",
+            "rounded-lg",
+            "border",
+            "border-outline-variant",
+            "focus:outline-none",
+            "focus:border-primary",
+            "focus:ring-1",
+            "focus:ring-primary",
+            "placeholder-on-surface-variant",
+            "transition-colors"
+          ],
+          "expectedBehavior": "controlled value with onChange; validation if required by PRD"
+        }
+      ],
+      "navLinks": [
+        {
+          "kind": "link",
+          "label": "dashboard",
+          "href": "#",
+          "classes": [
+            "font-body-md",
+            "text-body-md"
+          ],
+          "icon": "dashboard",
+          "action": "navigate",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "Task Board",
+          "href": "#",
+          "classes": [
+            "font-body-md",
+            "text-body-md"
+          ],
+          "icon": "assignment",
+          "action": "navigate",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "Equipment",
+          "href": "#",
+          "classes": [
+            "font-body-md",
+            "text-body-md"
+          ],
+          "icon": "precision_manufacturing",
+          "action": "navigate",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "Logs",
+          "href": "#",
+          "classes": [
+            "font-body-md",
+            "text-body-md"
+          ],
+          "icon": "database",
+          "action": "navigate",
+          "expectedBehavior": "navigate:#"
+        }
+      ],
+      "cards": [],
+      "icons": [
+        "eco",
+        "dashboard",
+        "assignment",
+        "precision_manufacturing",
+        "database",
+        "add",
+        "search",
+        "sync",
+        "account_circle",
+        "water_pump",
+        "air",
+        "thermostat",
+        "lightbulb",
+        "water_drop"
+      ],
+      "images": [],
+      "cssVars": {},
+      "colorPalette": {
+        "error": "#ffb4ab",
+        "inverse-surface": "#e1e2ec",
+        "outline-variant": "#424754",
+        "primary-fixed-dim": "#adc6ff",
+        "on-background": "#e1e2ec",
+        "surface-container": "#1d2027",
+        "surface-container-lowest": "#0b0e15",
+        "on-primary-container": "#00285d",
+        "primary-fixed": "#d8e2ff",
+        "tertiary-container": "#df7412",
+        "primary-container": "#4d8eff",
+        "surface": "#10131a",
+        "surface-container-high": "#272a31",
+        "on-secondary-fixed": "#0d1c2d",
+        "error-container": "#93000a",
+        "on-tertiary-container": "#461f00",
+        "outline": "#8c909f",
+        "on-error": "#690005",
+        "secondary-fixed-dim": "#b9c8de",
+        "on-primary-fixed-variant": "#004395",
+        "tertiary": "#ffb786",
+        "surface-bright": "#363941",
+        "surface-container-low": "#191b23",
+        "on-tertiary-fixed": "#311400",
+        "secondary": "#b9c8de",
+        "surface-tint": "#adc6ff",
+        "secondary-fixed": "#d4e4fa",
+        "background": "#10131a",
+        "on-secondary": "#233143",
+        "on-secondary-fixed-variant": "#39485a",
+        "surface-variant": "#32353c",
+        "on-surface-variant": "#c2c6d6",
+        "on-error-container": "#ffdad6",
+        "secondary-container": "#39485a",
+        "on-surface": "#e1e2ec",
+        "tertiary-fixed": "#ffdcc6",
+        "inverse-primary": "#005ac2",
+        "surface-dim": "#10131a",
+        "inverse-on-surface": "#2e3038",
+        "on-primary": "#002e6a",
+        "on-tertiary": "#502400",
+        "primary": "#adc6ff",
+        "surface-container-highest": "#32353c",
+        "on-secondary-container": "#a7b6cc",
+        "on-primary-fixed": "#001a42",
+        "tertiary-fixed-dim": "#ffb786",
+        "on-tertiary-fixed-variant": "#723600"
+      },
+      "fonts": [
+        "Material Symbols Outlined"
+      ],
+      "layoutHints": {
+        "gridCols": 1,
+        "flexDirection": "col"
+      },
+      "behaviorContract": [
+        {
+          "kind": "link",
+          "label": "dashboard",
+          "icon": "dashboard",
+          "route": "#",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "Task Board",
+          "icon": "assignment",
+          "route": "#",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "Equipment",
+          "icon": "precision_manufacturing",
+          "route": "#",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "Logs",
+          "icon": "database",
+          "route": "#",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "button",
+          "label": "Create Task",
+          "icon": "add",
+          "action": "create",
+          "expectedBehavior": "open create flow or add a new item/state"
+        },
+        {
+          "kind": "button",
+          "label": "sync",
+          "icon": "sync",
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "account_circle",
+          "icon": "account_circle",
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "All Systems",
+          "icon": null,
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "Healthy",
+          "icon": null,
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "Warning",
+          "icon": null,
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "Critical",
+          "icon": null,
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "eco",
+          "icon": "eco",
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "Greenhouse Ops Maintenance Console",
+          "icon": null,
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "input",
+          "label": "Search equipment...",
+          "type": "text",
+          "placeholder": "Search equipment...",
+          "expectedBehavior": "controlled value with onChange; validation if required by PRD"
+        }
+      ],
+      "tabBar": [
+        {
+          "kind": "button",
+          "label": "eco",
+          "icon": "eco",
+          "active": true
+        },
+        {
+          "kind": "button",
+          "label": "Greenhouse Ops Maintenance Console",
+          "icon": null,
+          "active": true
+        },
+        {
+          "kind": "link",
+          "label": "dashboard",
+          "icon": "dashboard",
+          "route": "#",
+          "active": false
+        },
+        {
+          "kind": "link",
+          "label": "Task Board",
+          "icon": "assignment",
+          "route": "#",
+          "active": false
+        },
+        {
+          "kind": "link",
+          "label": "Equipment",
+          "icon": "precision_manufacturing",
+          "route": "#",
+          "active": true
+        },
+        {
+          "kind": "link",
+          "label": "Logs",
+          "icon": "database",
+          "route": "#",
+          "active": false
+        },
+        {
+          "kind": "button",
+          "label": "Create Task",
+          "icon": "add",
+          "active": true
+        }
+      ],
+      "title": "Equipment Status"
+    },
+    "6abfcfd24d974af28274f478df012ca5": {
+      "screenId": "6abfcfd24d974af28274f478df012ca5",
+      "materialSymbolsRequired": true,
+      "sections": [
+        {
+          "tag": "nav",
+          "layout": "absolute",
+          "classes": [
+            "bg-surface-container",
+            "dark:bg-surface-container",
+            "fixed",
+            "left-0",
+            "top-0",
+            "h-full",
+            "w-64",
+            "bg-surface-container-low",
+            "hidden",
+            "md:flex"
+          ],
+          "childCount": 8
+        },
+        {
+          "tag": "header",
+          "layout": "flex-row",
+          "classes": [
+            "bg-surface",
+            "dark:bg-surface-dim",
+            "fixed",
+            "top-0",
+            "right-0",
+            "w-full",
+            "md:w-[calc(100%-16rem)]",
+            "bg-surface-container-lowest",
+            "flex",
+            "justify-between"
+          ],
+          "childCount": 2
+        },
+        {
+          "tag": "main",
+          "layout": "flex-col",
+          "classes": [
+            "flex-1",
+            "pt-[calc(44px+32px)]",
+            "p-margin",
+            "md:p-xl",
+            "flex",
+            "flex-col",
+            "items-center",
+            "justify-center"
+          ],
+          "childCount": 10
+        }
+      ],
+      "buttons": [
+        {
+          "kind": "button",
+          "label": "Create Task",
+          "classes": [
+            "w-full",
+            "flex",
+            "items-center",
+            "justify-center",
+            "gap-sm",
+            "bg-primary",
+            "text-on-primary",
+            "h-touch-target",
+            "rounded-lg",
+            "font-label-md",
+            "text-label-md",
+            "hover:opacity-90",
+            "transition-opacity",
+            "focus:outline-none",
+            "focus:ring-2",
+            "focus:ring-primary",
+            "focus:ring-offset-2",
+            "focus:ring-offset-surface-container"
+          ],
+          "icon": "add",
+          "action": "create",
+          "expectedBehavior": "open create flow or add a new item/state"
+        },
+        {
+          "kind": "button",
+          "label": "sync",
+          "classes": [
+            "p-2",
+            "rounded-full",
+            "text-on-surface-variant",
+            "hover:text-primary",
+            "hover:bg-surface-container-high",
+            "transition-all",
+            "focus:outline-none",
+            "focus:ring-2",
+            "focus:ring-primary"
+          ],
+          "icon": "sync",
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "account_circle",
+          "classes": [
+            "p-2",
+            "rounded-full",
+            "text-on-surface-variant",
+            "hover:text-primary",
+            "hover:bg-surface-container-high",
+            "transition-all",
+            "focus:outline-none",
+            "focus:ring-2",
+            "focus:ring-primary"
+          ],
+          "icon": "account_circle",
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "Create Your First Task",
+          "classes": [
+            "flex",
+            "items-center",
+            "justify-center",
+            "gap-sm",
+            "bg-primary",
+            "text-on-primary",
+            "h-touch-target",
+            "px-xl",
+            "rounded-lg",
+            "font-body-md",
+            "text-body-md",
+            "font-medium",
+            "hover:opacity-90",
+            "transition-opacity",
+            "focus:outline-none",
+            "focus:ring-2",
+            "focus:ring-primary",
+            "focus:ring-offset-2",
+            "focus:ring-offset-background",
+            "mb-xl",
+            "shadow-sm"
+          ],
+          "icon": "add",
+          "action": "create",
+          "expectedBehavior": "open create flow or add a new item/state"
+        },
+        {
+          "kind": "button",
+          "label": "Greenhouse Ops Maintenance Console",
+          "classes": [],
+          "icon": null,
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "Admin User",
+          "classes": [],
+          "icon": null,
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        }
+      ],
+      "inputs": [],
+      "navLinks": [
+        {
+          "kind": "link",
+          "label": "dashboard",
+          "href": "#",
+          "classes": [
+            "font-body-md",
+            "text-body-md"
+          ],
+          "icon": "dashboard",
+          "action": "navigate",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "Task Board",
+          "href": "#",
+          "classes": [
+            "font-body-md",
+            "text-body-md"
+          ],
+          "icon": "assignment",
+          "action": "navigate",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "Equipment",
+          "href": "#",
+          "classes": [
+            "font-body-md",
+            "text-body-md"
+          ],
+          "icon": "precision_manufacturing",
+          "action": "navigate",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "Logs",
+          "href": "#",
+          "classes": [
+            "font-body-md",
+            "text-body-md"
+          ],
+          "icon": "database",
+          "action": "navigate",
+          "expectedBehavior": "navigate:#"
+        }
+      ],
+      "cards": [],
+      "icons": [
+        "dashboard",
+        "assignment",
+        "precision_manufacturing",
+        "database",
+        "add",
+        "sync",
+        "account_circle",
+        "psychiatry",
+        "calendar_month",
+        "monitoring"
+      ],
+      "images": [
+        {
+          "src": "https://lh3.googleusercontent.com/aida-public/AB6AXuBSkCCSBuVNrLupTlcBxY5dNmkv5ZcPjA-mHhxcJIy1aXlJDOBIEINqiGc7ATw3ZVQG50PpELbqWVZv-tIM36MYkqqBG98Z5B1pAOnZp0YkSi5iBdqU1eF90ENOTqBwY4dEwJPDUH8426A0SJu9Yt",
+          "alt": "User profile"
+        }
+      ],
+      "cssVars": {},
+      "colorPalette": {
+        "error": "#ffb4ab",
+        "inverse-surface": "#e1e2ec",
+        "outline-variant": "#424754",
+        "primary-fixed-dim": "#adc6ff",
+        "on-background": "#e1e2ec",
+        "surface-container": "#1d2027",
+        "surface-container-lowest": "#0b0e15",
+        "on-primary-container": "#00285d",
+        "primary-fixed": "#d8e2ff",
+        "tertiary-container": "#df7412",
+        "primary-container": "#4d8eff",
+        "surface": "#10131a",
+        "surface-container-high": "#272a31",
+        "on-secondary-fixed": "#0d1c2d",
+        "error-container": "#93000a",
+        "on-tertiary-container": "#461f00",
+        "outline": "#8c909f",
+        "on-error": "#690005",
+        "secondary-fixed-dim": "#b9c8de",
+        "on-primary-fixed-variant": "#004395",
+        "tertiary": "#ffb786",
+        "surface-bright": "#363941",
+        "surface-container-low": "#191b23",
+        "on-tertiary-fixed": "#311400",
+        "secondary": "#b9c8de",
+        "surface-tint": "#adc6ff",
+        "secondary-fixed": "#d4e4fa",
+        "background": "#10131a",
+        "on-secondary": "#233143",
+        "on-secondary-fixed-variant": "#39485a",
+        "surface-variant": "#32353c",
+        "on-surface-variant": "#c2c6d6",
+        "on-error-container": "#ffdad6",
+        "secondary-container": "#39485a",
+        "on-surface": "#e1e2ec",
+        "tertiary-fixed": "#ffdcc6",
+        "inverse-primary": "#005ac2",
+        "surface-dim": "#10131a",
+        "inverse-on-surface": "#2e3038",
+        "on-primary": "#002e6a",
+        "on-tertiary": "#502400",
+        "primary": "#adc6ff",
+        "surface-container-highest": "#32353c",
+        "on-secondary-container": "#a7b6cc",
+        "on-primary-fixed": "#001a42",
+        "tertiary-fixed-dim": "#ffb786",
+        "on-tertiary-fixed-variant": "#723600"
+      },
+      "fonts": [
+        "Inter",
+        "Material Symbols Outlined"
+      ],
+      "layoutHints": {
+        "gridCols": 1,
+        "flexDirection": "col"
+      },
+      "behaviorContract": [
+        {
+          "kind": "link",
+          "label": "dashboard",
+          "icon": "dashboard",
+          "route": "#",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "Task Board",
+          "icon": "assignment",
+          "route": "#",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "Equipment",
+          "icon": "precision_manufacturing",
+          "route": "#",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "Logs",
+          "icon": "database",
+          "route": "#",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "button",
+          "label": "Create Task",
+          "icon": "add",
+          "action": "create",
+          "expectedBehavior": "open create flow or add a new item/state"
+        },
+        {
+          "kind": "button",
+          "label": "sync",
+          "icon": "sync",
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "account_circle",
+          "icon": "account_circle",
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "Create Your First Task",
+          "icon": "add",
+          "action": "create",
+          "expectedBehavior": "open create flow or add a new item/state"
+        },
+        {
+          "kind": "button",
+          "label": "Greenhouse Ops Maintenance Console",
+          "icon": null,
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "Admin User",
+          "icon": null,
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        }
+      ],
+      "tabBar": [
+        {
+          "kind": "button",
+          "label": "Greenhouse Ops Maintenance Console",
+          "icon": null,
+          "active": true
+        },
+        {
+          "kind": "link",
+          "label": "dashboard",
+          "icon": "dashboard",
+          "route": "#",
+          "active": true
+        },
+        {
+          "kind": "link",
+          "label": "Task Board",
+          "icon": "assignment",
+          "route": "#",
+          "active": false
+        },
+        {
+          "kind": "link",
+          "label": "Equipment",
+          "icon": "precision_manufacturing",
+          "route": "#",
+          "active": false
+        },
+        {
+          "kind": "link",
+          "label": "Logs",
+          "icon": "database",
+          "route": "#",
+          "active": false
+        },
+        {
+          "kind": "button",
+          "label": "Create Task",
+          "icon": "add",
+          "active": true
+        },
+        {
+          "kind": "button",
+          "label": "Admin User",
+          "icon": null,
+          "active": false
+        }
+      ],
+      "title": "Empty State"
+    },
+    "804ad20c9b26420b8a6fad2ee5fe7ecc": {
+      "screenId": "804ad20c9b26420b8a6fad2ee5fe7ecc",
+      "materialSymbolsRequired": true,
+      "sections": [
+        {
+          "tag": "nav",
+          "layout": "flex-col",
+          "classes": [
+            "hidden",
+            "md:flex",
+            "flex-col",
+            "h-full",
+            "py-md",
+            "px-sm",
+            "bg-surface-container",
+            "bg-surface-container-low",
+            "fixed",
+            "left-0"
+          ],
+          "childCount": 8
+        },
+        {
+          "tag": "header",
+          "layout": "flex-row",
+          "classes": [
+            "flex",
+            "justify-between",
+            "items-center",
+            "h-touch-target",
+            "px-lg",
+            "py-md",
+            "bg-surface",
+            "border-b",
+            "border-surface-container-lowest",
+            "sticky"
+          ],
+          "childCount": 4
+        },
+        {
+          "tag": "main",
+          "layout": "flex-row",
+          "classes": [
+            "flex-1",
+            "p-gutter",
+            "bg-background"
+          ],
+          "childCount": 7
+        }
+      ],
+      "buttons": [
+        {
+          "kind": "button",
+          "label": "Retry Connection",
+          "classes": [
+            "bg-primary",
+            "text-on-primary",
+            "font-body-lg",
+            "text-body-lg",
+            "font-medium",
+            "rounded-lg",
+            "h-touch-target",
+            "px-lg",
+            "hover:bg-primary-fixed-dim",
+            "transition-colors",
+            "flex-1",
+            "flex",
+            "justify-center",
+            "items-center",
+            "gap-sm"
+          ],
+          "icon": "refresh",
+          "action": "retry",
+          "expectedBehavior": "retry the failed action and show loading/error feedback"
+        },
+        {
+          "kind": "button",
+          "label": "Reset Application Data",
+          "classes": [
+            "border",
+            "border-error",
+            "text-error",
+            "font-body-lg",
+            "text-body-lg",
+            "font-medium",
+            "rounded-lg",
+            "h-touch-target",
+            "px-lg",
+            "hover:bg-error-container/30",
+            "transition-colors",
+            "flex-1",
+            "flex",
+            "justify-center",
+            "items-center",
+            "gap-sm"
+          ],
+          "icon": "delete_forever",
+          "action": "destructive",
+          "expectedBehavior": "perform destructive action with visible feedback or confirmation"
+        },
+        {
+          "kind": "button",
+          "label": "Create Task",
+          "classes": [
+            "w-full",
+            "flex",
+            "items-center",
+            "justify-center",
+            "gap-sm",
+            "bg-surface-variant",
+            "text-on-surface-variant",
+            "h-touch-target",
+            "rounded-lg",
+            "font-body-md",
+            "text-body-md",
+            "font-medium"
+          ],
+          "icon": "add",
+          "action": "create",
+          "expectedBehavior": "open create flow or add a new item/state"
+        },
+        {
+          "kind": "button",
+          "label": "Sync",
+          "classes": [
+            "w-touch-target",
+            "h-touch-target",
+            "rounded-full",
+            "flex",
+            "items-center",
+            "justify-center",
+            "text-on-surface-variant"
+          ],
+          "icon": "sync",
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "Account",
+          "classes": [
+            "w-touch-target",
+            "h-touch-target",
+            "rounded-full",
+            "flex",
+            "items-center",
+            "justify-center",
+            "text-on-surface-variant"
+          ],
+          "icon": "account_circle",
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "spa",
+          "classes": [],
+          "icon": "spa",
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "Greenhouse Ops Maintenance Console",
+          "classes": [],
+          "icon": null,
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        }
+      ],
+      "inputs": [],
+      "navLinks": [
+        {
+          "kind": "link",
+          "label": "dashboard",
+          "href": "#",
+          "classes": [
+            "font-body-md",
+            "text-body-md"
+          ],
+          "icon": "dashboard",
+          "action": "navigate",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "Task Board",
+          "href": "#",
+          "classes": [
+            "font-body-md",
+            "text-body-md"
+          ],
+          "icon": "assignment",
+          "action": "navigate",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "Equipment",
+          "href": "#",
+          "classes": [
+            "font-body-md",
+            "text-body-md"
+          ],
+          "icon": "precision_manufacturing",
+          "action": "navigate",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "Logs",
+          "href": "#",
+          "classes": [
+            "font-body-md",
+            "text-body-md"
+          ],
+          "icon": "database",
+          "action": "navigate",
+          "expectedBehavior": "navigate:#"
+        }
+      ],
+      "cards": [],
+      "icons": [
+        "cloud_off",
+        "refresh",
+        "delete_forever",
+        "spa",
+        "dashboard",
+        "assignment",
+        "precision_manufacturing",
+        "database",
+        "add",
+        "search",
+        "sync",
+        "account_circle"
+      ],
+      "images": [],
+      "cssVars": {},
+      "colorPalette": {
+        "error": "#ffb4ab",
+        "inverse-surface": "#e1e2ec",
+        "outline-variant": "#424754",
+        "primary-fixed-dim": "#adc6ff",
+        "on-background": "#e1e2ec",
+        "surface-container": "#1d2027",
+        "surface-container-lowest": "#0b0e15",
+        "on-primary-container": "#00285d",
+        "primary-fixed": "#d8e2ff",
+        "tertiary-container": "#df7412",
+        "primary-container": "#4d8eff",
+        "surface": "#10131a",
+        "surface-container-high": "#272a31",
+        "on-secondary-fixed": "#0d1c2d",
+        "error-container": "#93000a",
+        "on-tertiary-container": "#461f00",
+        "outline": "#8c909f",
+        "on-error": "#690005",
+        "secondary-fixed-dim": "#b9c8de",
+        "on-primary-fixed-variant": "#004395",
+        "tertiary": "#ffb786",
+        "surface-bright": "#363941",
+        "surface-container-low": "#191b23",
+        "on-tertiary-fixed": "#311400",
+        "secondary": "#b9c8de",
+        "surface-tint": "#adc6ff",
+        "secondary-fixed": "#d4e4fa",
+        "background": "#10131a",
+        "on-secondary": "#233143",
+        "on-secondary-fixed-variant": "#39485a",
+        "surface-variant": "#32353c",
+        "on-surface-variant": "#c2c6d6",
+        "on-error-container": "#ffdad6",
+        "secondary-container": "#39485a",
+        "on-surface": "#e1e2ec",
+        "tertiary-fixed": "#ffdcc6",
+        "inverse-primary": "#005ac2",
+        "surface-dim": "#10131a",
+        "inverse-on-surface": "#2e3038",
+        "on-primary": "#002e6a",
+        "on-tertiary": "#502400",
+        "primary": "#adc6ff",
+        "surface-container-highest": "#32353c",
+        "on-secondary-container": "#a7b6cc",
+        "on-primary-fixed": "#001a42",
+        "tertiary-fixed-dim": "#ffb786",
+        "on-tertiary-fixed-variant": "#723600"
+      },
+      "fonts": [
+        "Material Symbols Outlined",
+        "Inter"
+      ],
+      "layoutHints": {
+        "gridCols": 1,
+        "flexDirection": "col"
+      },
+      "behaviorContract": [
+        {
+          "kind": "link",
+          "label": "dashboard",
+          "icon": "dashboard",
+          "route": "#",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "Task Board",
+          "icon": "assignment",
+          "route": "#",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "Equipment",
+          "icon": "precision_manufacturing",
+          "route": "#",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "Logs",
+          "icon": "database",
+          "route": "#",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "button",
+          "label": "Retry Connection",
+          "icon": "refresh",
+          "action": "retry",
+          "expectedBehavior": "retry the failed action and show loading/error feedback"
+        },
+        {
+          "kind": "button",
+          "label": "Reset Application Data",
+          "icon": "delete_forever",
+          "action": "destructive",
+          "expectedBehavior": "perform destructive action with visible feedback or confirmation"
+        },
+        {
+          "kind": "button",
+          "label": "Create Task",
+          "icon": "add",
+          "action": "create",
+          "expectedBehavior": "open create flow or add a new item/state"
+        },
+        {
+          "kind": "button",
+          "label": "Sync",
+          "icon": "sync",
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "Account",
+          "icon": "account_circle",
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "spa",
+          "icon": "spa",
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "Greenhouse Ops Maintenance Console",
+          "icon": null,
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        }
+      ],
+      "tabBar": [
+        {
+          "kind": "button",
+          "label": "spa",
+          "icon": "spa",
+          "active": false
+        },
+        {
+          "kind": "button",
+          "label": "Greenhouse Ops Maintenance Console",
+          "icon": null,
+          "active": true
+        },
+        {
+          "kind": "link",
+          "label": "dashboard",
+          "icon": "dashboard",
+          "route": "#",
+          "active": false
+        },
+        {
+          "kind": "link",
+          "label": "Task Board",
+          "icon": "assignment",
+          "route": "#",
+          "active": false
+        },
+        {
+          "kind": "link",
+          "label": "Equipment",
+          "icon": "precision_manufacturing",
+          "route": "#",
+          "active": false
+        },
+        {
+          "kind": "link",
+          "label": "Logs",
+          "icon": "database",
+          "route": "#",
+          "active": false
+        },
+        {
+          "kind": "button",
+          "label": "Create Task",
+          "icon": "add",
+          "active": false
+        }
+      ],
+      "title": "Storage Error State"
+    },
+    "b6c2a851fa3b40449f4a606d3cb8b5a5": {
+      "screenId": "b6c2a851fa3b40449f4a606d3cb8b5a5",
+      "materialSymbolsRequired": true,
+      "sections": [
+        {
+          "tag": "aside",
+          "layout": "flex-col",
+          "classes": [
+            "fixed",
+            "left-0",
+            "top-0",
+            "h-full",
+            "w-64",
+            "bg-surface-container",
+            "dark:bg-surface-container",
+            "flex",
+            "flex-col",
+            "py-md"
+          ],
+          "childCount": 4
+        },
+        {
+          "tag": "header",
+          "layout": "flex-row",
+          "classes": [
+            "fixed",
+            "top-0",
+            "right-0",
+            "w-[calc(100%-16rem)]",
+            "bg-surface",
+            "dark:bg-surface-dim",
+            "flex",
+            "justify-between",
+            "items-center",
+            "h-touch-target"
+          ],
+          "childCount": 3
+        },
+        {
+          "tag": "main",
+          "layout": "flex-col",
+          "classes": [
+            "ml-64",
+            "mt-[44px]",
+            "p-lg",
+            "xl:p-xl",
+            "min-h-[calc(100vh-44px)]",
+            "flex",
+            "flex-col",
+            "gap-xl"
+          ],
+          "childCount": 27
+        }
+      ],
+      "buttons": [
+        {
+          "kind": "button",
+          "label": "Create Task",
+          "classes": [
+            "mx-sm",
+            "mb-lg",
+            "h-touch-target",
+            "bg-primary",
+            "text-on-primary",
+            "rounded",
+            "font-label-md",
+            "text-label-md",
+            "flex",
+            "items-center",
+            "justify-center",
+            "gap-sm",
+            "hover:bg-primary-fixed",
+            "transition-colors",
+            "shadow-sm"
+          ],
+          "icon": "add",
+          "action": "create",
+          "expectedBehavior": "open create flow or add a new item/state"
+        },
+        {
+          "kind": "button",
+          "label": "sync",
+          "classes": [
+            "w-10",
+            "h-10",
+            "rounded-full",
+            "flex",
+            "items-center",
+            "justify-center",
+            "text-on-surface-variant",
+            "hover:text-primary",
+            "transition-all",
+            "hover:bg-surface-container-high"
+          ],
+          "icon": "sync",
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "account_circle",
+          "classes": [
+            "w-10",
+            "h-10",
+            "rounded-full",
+            "flex",
+            "items-center",
+            "justify-center",
+            "text-on-surface-variant",
+            "hover:text-primary",
+            "transition-all",
+            "hover:bg-surface-container-high"
+          ],
+          "icon": "account_circle",
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "Light",
+          "classes": [
+            "flex",
+            "items-center",
+            "gap-sm",
+            "px-md",
+            "h-[36px]",
+            "rounded-full",
+            "text-on-surface-variant",
+            "hover:text-on-surface",
+            "font-label-md",
+            "text-label-md",
+            "transition-colors"
+          ],
+          "icon": "light_mode",
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "Dark",
+          "classes": [
+            "flex",
+            "items-center",
+            "gap-sm",
+            "px-md",
+            "h-[36px]",
+            "rounded-full",
+            "bg-surface",
+            "border",
+            "border-outline-variant",
+            "text-primary",
+            "font-label-md",
+            "text-label-md",
+            "shadow-sm"
+          ],
+          "icon": "dark_mode",
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "Clear Application Cache",
+          "classes": [
+            "w-full",
+            "h-touch-target",
+            "border",
+            "border-error",
+            "text-error",
+            "rounded",
+            "font-label-md",
+            "text-label-md",
+            "hover:bg-error-container",
+            "hover:text-on-error-container",
+            "transition-colors",
+            "flex",
+            "items-center",
+            "justify-center",
+            "gap-sm"
+          ],
+          "icon": "delete_sweep",
+          "action": "destructive",
+          "expectedBehavior": "perform destructive action with visible feedback or confirmation"
+        }
+      ],
+      "inputs": [
+        {
+          "kind": "input",
+          "type": "text",
+          "label": "Search settings...",
+          "placeholder": "Search settings...",
+          "name": "",
+          "classes": [
+            "h-[36px]",
+            "bg-surface-container",
+            "border",
+            "border-surface-variant",
+            "rounded-full",
+            "pl-xl",
+            "pr-md",
+            "font-body-md",
+            "text-body-md",
+            "text-on-surface",
+            "focus:border-primary",
+            "focus:ring-1",
+            "focus:ring-primary",
+            "outline-none",
+            "w-64",
+            "placeholder:text-on-surface-variant"
+          ],
+          "expectedBehavior": "controlled value with onChange; validation if required by PRD"
+        },
+        {
+          "kind": "input",
+          "type": "select",
+          "label": "select",
+          "placeholder": "",
+          "name": "",
+          "classes": [
+            "w-full",
+            "h-touch-target",
+            "bg-surface-container-highest",
+            "border",
+            "border-surface-variant",
+            "text-on-surface",
+            "rounded",
+            "font-body-md",
+            "text-body-md",
+            "px-md",
+            "appearance-none",
+            "focus:outline-none",
+            "focus:border-primary",
+            "focus:ring-1",
+            "focus:ring-primary",
+            "cursor-pointer"
+          ],
+          "expectedBehavior": "controlled value with onChange; validation if required by PRD"
+        },
+        {
+          "kind": "input",
+          "type": "checkbox",
+          "label": "checkbox",
+          "placeholder": "",
+          "name": "",
+          "classes": [
+            "sr-only",
+            "peer"
+          ],
+          "expectedBehavior": "controlled value with onChange; validation if required by PRD"
+        }
+      ],
+      "navLinks": [
+        {
+          "kind": "link",
+          "label": "dashboard",
+          "href": "#",
+          "classes": [
+            "material-symbols-outlined"
+          ],
+          "icon": "dashboard",
+          "action": "navigate",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "Task Board",
+          "href": "#",
+          "classes": [
+            "material-symbols-outlined"
+          ],
+          "icon": "assignment",
+          "action": "navigate",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "Equipment",
+          "href": "#",
+          "classes": [
+            "material-symbols-outlined"
+          ],
+          "icon": "precision_manufacturing",
+          "action": "navigate",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "Logs",
+          "href": "#",
+          "classes": [
+            "material-symbols-outlined"
+          ],
+          "icon": "database",
+          "action": "navigate",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "settings",
+          "href": "#",
+          "classes": [
+            "material-symbols-outlined"
+          ],
+          "icon": "settings",
+          "action": "navigate",
+          "expectedBehavior": "navigate:#"
+        }
+      ],
+      "cards": [],
+      "icons": [
+        "eco",
+        "add",
+        "dashboard",
+        "assignment",
+        "precision_manufacturing",
+        "database",
+        "settings",
+        "search",
+        "sync",
+        "account_circle",
+        "tune",
+        "light_mode",
+        "dark_mode",
+        "expand_more",
+        "storage",
+        "delete_sweep",
+        "terminal"
+      ],
+      "images": [],
+      "cssVars": {},
+      "colorPalette": {
+        "error": "#ffb4ab",
+        "inverse-surface": "#e1e2ec",
+        "outline-variant": "#424754",
+        "primary-fixed-dim": "#adc6ff",
+        "on-background": "#e1e2ec",
+        "surface-container": "#1d2027",
+        "surface-container-lowest": "#0b0e15",
+        "on-primary-container": "#00285d",
+        "primary-fixed": "#d8e2ff",
+        "tertiary-container": "#df7412",
+        "primary-container": "#4d8eff",
+        "surface": "#10131a",
+        "surface-container-high": "#272a31",
+        "on-secondary-fixed": "#0d1c2d",
+        "error-container": "#93000a",
+        "on-tertiary-container": "#461f00",
+        "outline": "#8c909f",
+        "on-error": "#690005",
+        "secondary-fixed-dim": "#b9c8de",
+        "on-primary-fixed-variant": "#004395",
+        "tertiary": "#ffb786",
+        "surface-bright": "#363941",
+        "surface-container-low": "#191b23",
+        "on-tertiary-fixed": "#311400",
+        "secondary": "#b9c8de",
+        "surface-tint": "#adc6ff",
+        "secondary-fixed": "#d4e4fa",
+        "background": "#10131a",
+        "on-secondary": "#233143",
+        "on-secondary-fixed-variant": "#39485a",
+        "surface-variant": "#32353c",
+        "on-surface-variant": "#c2c6d6",
+        "on-error-container": "#ffdad6",
+        "secondary-container": "#39485a",
+        "on-surface": "#e1e2ec",
+        "tertiary-fixed": "#ffdcc6",
+        "inverse-primary": "#005ac2",
+        "surface-dim": "#10131a",
+        "inverse-on-surface": "#2e3038",
+        "on-primary": "#002e6a",
+        "on-tertiary": "#502400",
+        "primary": "#adc6ff",
+        "surface-container-highest": "#32353c",
+        "on-secondary-container": "#a7b6cc",
+        "on-primary-fixed": "#001a42",
+        "tertiary-fixed-dim": "#ffb786",
+        "on-tertiary-fixed-variant": "#723600"
+      },
+      "fonts": [
+        "Inter",
+        "Material Symbols Outlined"
+      ],
+      "layoutHints": {
+        "gridCols": 1,
+        "flexDirection": "col"
+      },
+      "behaviorContract": [
+        {
+          "kind": "link",
+          "label": "dashboard",
+          "icon": "dashboard",
+          "route": "#",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "Task Board",
+          "icon": "assignment",
+          "route": "#",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "Equipment",
+          "icon": "precision_manufacturing",
+          "route": "#",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "Logs",
+          "icon": "database",
+          "route": "#",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "settings",
+          "icon": "settings",
+          "route": "#",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "button",
+          "label": "Create Task",
+          "icon": "add",
+          "action": "create",
+          "expectedBehavior": "open create flow or add a new item/state"
+        },
+        {
+          "kind": "button",
+          "label": "sync",
+          "icon": "sync",
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "account_circle",
+          "icon": "account_circle",
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "Light",
+          "icon": "light_mode",
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "Dark",
+          "icon": "dark_mode",
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "Clear Application Cache",
+          "icon": "delete_sweep",
+          "action": "destructive",
+          "expectedBehavior": "perform destructive action with visible feedback or confirmation"
+        },
+        {
+          "kind": "input",
+          "label": "Search settings...",
+          "type": "text",
+          "placeholder": "Search settings...",
+          "expectedBehavior": "controlled value with onChange; validation if required by PRD"
+        },
+        {
+          "kind": "input",
+          "label": "select",
+          "type": "select",
+          "placeholder": "",
+          "expectedBehavior": "controlled value with onChange; validation if required by PRD"
+        },
+        {
+          "kind": "input",
+          "label": "checkbox",
+          "type": "checkbox",
+          "placeholder": "",
+          "expectedBehavior": "controlled value with onChange; validation if required by PRD"
+        }
+      ],
+      "tabBar": [
+        {
+          "kind": "link",
+          "label": "dashboard",
+          "icon": "dashboard",
+          "route": "#",
+          "active": false
+        },
+        {
+          "kind": "link",
+          "label": "Task Board",
+          "icon": "assignment",
+          "route": "#",
+          "active": false
+        },
+        {
+          "kind": "link",
+          "label": "Equipment",
+          "icon": "precision_manufacturing",
+          "route": "#",
+          "active": false
+        },
+        {
+          "kind": "link",
+          "label": "Logs",
+          "icon": "database",
+          "route": "#",
+          "active": false
+        }
+      ],
+      "title": "Settings"
+    },
+    "cd8326dabc734e43957ba2919e4a21bf": {
+      "screenId": "cd8326dabc734e43957ba2919e4a21bf",
+      "materialSymbolsRequired": true,
+      "sections": [
+        {
+          "tag": "nav",
+          "layout": "flex-col",
+          "classes": [
+            "hidden",
+            "md:flex",
+            "flex-col",
+            "h-full",
+            "py-md",
+            "px-sm",
+            "bg-surface-container",
+            "w-64",
+            "border-r",
+            "border-surface-container-low"
+          ],
+          "childCount": 6
+        },
+        {
+          "tag": "main",
+          "layout": "flex-col",
+          "classes": [
+            "flex-1",
+            "flex",
+            "flex-col",
+            "min-w-0",
+            "h-full",
+            "overflow-hidden"
+          ],
+          "childCount": 38
+        }
+      ],
+      "buttons": [
+        {
+          "kind": "button",
+          "label": "Create Task",
+          "classes": [
+            "flex",
+            "items-center",
+            "justify-center",
+            "gap-sm",
+            "bg-primary",
+            "text-on-primary",
+            "rounded",
+            "h-touch-target",
+            "font-label-md",
+            "text-label-md",
+            "hover:bg-primary-fixed",
+            "transition-colors",
+            "mb-lg",
+            "mx-sm"
+          ],
+          "icon": "add",
+          "action": "create",
+          "expectedBehavior": "open create flow or add a new item/state"
+        },
+        {
+          "kind": "button",
+          "label": "sync",
+          "classes": [
+            "w-11",
+            "h-touch-target",
+            "flex",
+            "items-center",
+            "justify-center",
+            "rounded",
+            "text-on-surface-variant",
+            "hover:text-primary",
+            "transition-all",
+            "hover:bg-surface-container-high"
+          ],
+          "icon": "sync",
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "more_horiz",
+          "classes": [
+            "text-on-surface-variant",
+            "hover:text-primary"
+          ],
+          "icon": "more_horiz",
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "Greenhouse Ops Maintenance Console",
+          "classes": [],
+          "icon": null,
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "Tech 04 - JD",
+          "classes": [],
+          "icon": null,
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        }
+      ],
+      "inputs": [
+        {
+          "kind": "input",
+          "type": "text",
+          "label": "Search tasks...",
+          "placeholder": "Search tasks...",
+          "name": "",
+          "classes": [
+            "bg-surface-container",
+            "border",
+            "border-outline-variant",
+            "rounded",
+            "h-touch-target",
+            "pl-xl",
+            "pr-sm",
+            "text-on-surface",
+            "font-body-md",
+            "focus:border-primary",
+            "focus:ring-1",
+            "focus:ring-primary",
+            "w-64",
+            "placeholder-on-surface-variant"
+          ],
+          "expectedBehavior": "controlled value with onChange; validation if required by PRD"
+        }
+      ],
+      "navLinks": [
+        {
+          "kind": "link",
+          "label": "dashboard",
+          "href": "#",
+          "classes": [
+            "font-body-md",
+            "text-body-md"
+          ],
+          "icon": "dashboard",
+          "action": "navigate",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "Task Board",
+          "href": "#",
+          "classes": [
+            "font-body-md",
+            "text-body-md"
+          ],
+          "icon": "assignment",
+          "action": "navigate",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "Equipment",
+          "href": "#",
+          "classes": [
+            "font-body-md",
+            "text-body-md"
+          ],
+          "icon": "precision_manufacturing",
+          "action": "navigate",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "Logs",
+          "href": "#",
+          "classes": [
+            "font-body-md",
+            "text-body-md"
+          ],
+          "icon": "database",
+          "action": "navigate",
+          "expectedBehavior": "navigate:#"
+        }
+      ],
+      "cards": [],
+      "icons": [
+        "add",
+        "dashboard",
+        "assignment",
+        "precision_manufacturing",
+        "database",
+        "search",
+        "sync",
+        "more_horiz",
+        "calendar_today",
+        "pending",
+        "check_circle"
+      ],
+      "images": [
+        {
+          "src": "https://lh3.googleusercontent.com/aida-public/AB6AXuDyuIMymQlKBdXU-OTSpvGxWdoGlzzg4RDnIdyQXLtT5a49Bcmqhqq1pW8I1-zfjlVuhAkNDNupeubBA2otXsmacr7Dx3wRwIvktpCq7TFK-HccbQ8W7w1UQ8ycs1Nt78my7rTbUUXwWps2MaTUmU",
+          "alt": "Company Logo"
+        },
+        {
+          "src": "https://lh3.googleusercontent.com/aida-public/AB6AXuAlg0YpsW1GszFacBvYyp5-7TeYjQHe-5OJkE0uF8a6me4j24nSOWtWGVOfkOS88jYluQNPz-WJHBtFq6rYmdH11iBkBp0pyVLxG3d2LidASLOCfGDcFz9U0nO7NdWjEg5kS82mul3hWQZJII9Zct",
+          "alt": "User profile"
+        },
+        {
+          "src": "https://lh3.googleusercontent.com/aida-public/AB6AXuDg6481oZNfnpgrBsdFOfZcxOBSHOcFKtym-JyTlt1k_Mo4Ucbe3JewLZ-oa9GRaex9PUoo92QnYTQZX9Sg6mt_3F0RYi-v4KSiyLmiUM5VfTuDLtFqFgP5SZi5CCjwDadILG0ndpAC13n05Dkn9g",
+          "alt": "Assignee"
+        },
+        {
+          "src": "https://lh3.googleusercontent.com/aida-public/AB6AXuBFdE83gJMK32e0yoUaeN5dD32tURcpErnPRPPvvop6NJFO9GC25Cwcc9XChSiSpr44z0yhoy4Vp8oEe2U6q3LTgWsB81EFvzdMjUDj3E7hPdbvNqGljqyXmJ3cQeStiHN7dgete4t7M4Lsa1PLEz",
+          "alt": "Assignee"
+        },
+        {
+          "src": "https://lh3.googleusercontent.com/aida-public/AB6AXuDbrn6t104DzxgkMMuhh8DeCzvtPaaUrK7XQ7GrMWWY7cQcsB0T3Y7PQYKYjp5eJmGmTngI8HkkUjWT7Ca6HTtbGwxFRFwJHOnWufw4PA0AJBlTrpLv7UXKOzmiRC1z9DOwo7AziAWq2G_8OcKNsW",
+          "alt": "Assignee"
+        },
+        {
+          "src": "https://lh3.googleusercontent.com/aida-public/AB6AXuDCOpdW8jNGI-VRtBVK3RQYCbgyqpELAJPsifNBlxXbqZutMvJ0mNcgdF0LW3Mm8S5dX61YEFn6frUrx3R31XTSIduzLYk0U00xV7qZL-uwAUrTaLsrSWlNQuHW4LncSYbD_MnAfz0IJJYNmPOq9s",
+          "alt": "Assignee"
+        }
+      ],
+      "cssVars": {},
+      "colorPalette": {
+        "error": "#ffb4ab",
+        "inverse-surface": "#e1e2ec",
+        "outline-variant": "#424754",
+        "primary-fixed-dim": "#adc6ff",
+        "on-background": "#e1e2ec",
+        "surface-container": "#1d2027",
+        "surface-container-lowest": "#0b0e15",
+        "on-primary-container": "#00285d",
+        "primary-fixed": "#d8e2ff",
+        "tertiary-container": "#df7412",
+        "primary-container": "#4d8eff",
+        "surface": "#10131a",
+        "surface-container-high": "#272a31",
+        "on-secondary-fixed": "#0d1c2d",
+        "error-container": "#93000a",
+        "on-tertiary-container": "#461f00",
+        "outline": "#8c909f",
+        "on-error": "#690005",
+        "secondary-fixed-dim": "#b9c8de",
+        "on-primary-fixed-variant": "#004395",
+        "tertiary": "#ffb786",
+        "surface-bright": "#363941",
+        "surface-container-low": "#191b23",
+        "on-tertiary-fixed": "#311400",
+        "secondary": "#b9c8de",
+        "surface-tint": "#adc6ff",
+        "secondary-fixed": "#d4e4fa",
+        "background": "#10131a",
+        "on-secondary": "#233143",
+        "on-secondary-fixed-variant": "#39485a",
+        "surface-variant": "#32353c",
+        "on-surface-variant": "#c2c6d6",
+        "on-error-container": "#ffdad6",
+        "secondary-container": "#39485a",
+        "on-surface": "#e1e2ec",
+        "tertiary-fixed": "#ffdcc6",
+        "inverse-primary": "#005ac2",
+        "surface-dim": "#10131a",
+        "inverse-on-surface": "#2e3038",
+        "on-primary": "#002e6a",
+        "on-tertiary": "#502400",
+        "primary": "#adc6ff",
+        "surface-container-highest": "#32353c",
+        "on-secondary-container": "#a7b6cc",
+        "on-primary-fixed": "#001a42",
+        "tertiary-fixed-dim": "#ffb786",
+        "on-tertiary-fixed-variant": "#723600"
+      },
+      "fonts": [
+        "Inter",
+        "Material Symbols Outlined"
+      ],
+      "layoutHints": {
+        "flexDirection": "col"
+      },
+      "behaviorContract": [
+        {
+          "kind": "link",
+          "label": "dashboard",
+          "icon": "dashboard",
+          "route": "#",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "Task Board",
+          "icon": "assignment",
+          "route": "#",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "Equipment",
+          "icon": "precision_manufacturing",
+          "route": "#",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "Logs",
+          "icon": "database",
+          "route": "#",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "button",
+          "label": "Create Task",
+          "icon": "add",
+          "action": "create",
+          "expectedBehavior": "open create flow or add a new item/state"
+        },
+        {
+          "kind": "button",
+          "label": "sync",
+          "icon": "sync",
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "more_horiz",
+          "icon": "more_horiz",
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "Greenhouse Ops Maintenance Console",
+          "icon": null,
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "Tech 04 - JD",
+          "icon": null,
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "input",
+          "label": "Search tasks...",
+          "type": "text",
+          "placeholder": "Search tasks...",
+          "expectedBehavior": "controlled value with onChange; validation if required by PRD"
+        }
+      ],
+      "tabBar": [
+        {
+          "kind": "button",
+          "label": "Greenhouse Ops Maintenance Console",
+          "icon": null,
+          "active": true
+        },
+        {
+          "kind": "button",
+          "label": "Create Task",
+          "icon": "add",
+          "active": true
+        },
+        {
+          "kind": "link",
+          "label": "dashboard",
+          "icon": "dashboard",
+          "route": "#",
+          "active": false
+        },
+        {
+          "kind": "link",
+          "label": "Task Board",
+          "icon": "assignment",
+          "route": "#",
+          "active": true
+        },
+        {
+          "kind": "link",
+          "label": "Equipment",
+          "icon": "precision_manufacturing",
+          "route": "#",
+          "active": false
+        },
+        {
+          "kind": "link",
+          "label": "Logs",
+          "icon": "database",
+          "route": "#",
+          "active": false
+        },
+        {
+          "kind": "button",
+          "label": "Tech 04 - JD",
+          "icon": null,
+          "active": false
+        }
+      ],
+      "title": "Task Board"
+    },
+    "db17c4057c334dfda3216e110b00f722": {
+      "screenId": "db17c4057c334dfda3216e110b00f722",
+      "materialSymbolsRequired": true,
+      "sections": [
+        {
+          "tag": "nav",
+          "layout": "flex-col",
+          "classes": [
+            "hidden",
+            "md:flex",
+            "flex-col",
+            "h-full",
+            "py-md",
+            "px-sm",
+            "bg-surface-container",
+            "dark:bg-surface-container",
+            "fixed",
+            "left-0"
+          ],
+          "childCount": 8
+        },
+        {
+          "tag": "main",
+          "layout": "flex-col",
+          "classes": [
+            "flex-1",
+            "flex",
+            "flex-col",
+            "h-full",
+            "ml-0",
+            "md:ml-64",
+            "relative"
+          ],
+          "childCount": 33
+        }
+      ],
+      "buttons": [
+        {
+          "kind": "button",
+          "label": "Create Task",
+          "classes": [
+            "mb-lg",
+            "h-touch-target",
+            "w-full",
+            "bg-primary",
+            "text-on-primary",
+            "rounded-lg",
+            "font-body-lg",
+            "text-body-lg",
+            "flex",
+            "items-center",
+            "justify-center",
+            "gap-sm",
+            "hover:opacity-90",
+            "transition-opacity",
+            "focus:outline-none",
+            "focus:ring-2",
+            "focus:ring-primary",
+            "focus:ring-offset-2",
+            "focus:ring-offset-surface-container"
+          ],
+          "icon": "add",
+          "action": "create",
+          "expectedBehavior": "open create flow or add a new item/state"
+        },
+        {
+          "kind": "button",
+          "label": "Sync",
+          "classes": [
+            "w-touch-target",
+            "h-touch-target",
+            "flex",
+            "items-center",
+            "justify-center",
+            "rounded-full",
+            "hover:bg-surface-container-high",
+            "text-on-surface-variant",
+            "hover:text-primary",
+            "transition-all",
+            "active:scale-95",
+            "duration-150"
+          ],
+          "icon": "sync",
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "Account",
+          "classes": [
+            "w-touch-target",
+            "h-touch-target",
+            "flex",
+            "items-center",
+            "justify-center",
+            "rounded-full",
+            "hover:bg-surface-container-high",
+            "text-on-surface-variant",
+            "hover:text-primary",
+            "transition-all",
+            "active:scale-95",
+            "duration-150"
+          ],
+          "icon": "account_circle",
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "Last 7 days",
+          "classes": [
+            "h-8",
+            "px-md",
+            "rounded-full",
+            "bg-surface-container",
+            "border",
+            "border-primary",
+            "text-primary",
+            "font-label-md",
+            "text-label-md",
+            "flex",
+            "items-center",
+            "gap-xs",
+            "focus:outline-none",
+            "focus:ring-2",
+            "focus:ring-primary",
+            "focus:ring-offset-2",
+            "focus:ring-offset-background"
+          ],
+          "icon": "close",
+          "action": "dismiss",
+          "expectedBehavior": "close dialog/panel or return to previous state"
+        },
+        {
+          "kind": "button",
+          "label": "High Priority",
+          "classes": [
+            "h-8",
+            "px-md",
+            "rounded-full",
+            "bg-surface-container",
+            "border",
+            "border-outline-variant",
+            "text-on-surface-variant",
+            "hover:border-primary",
+            "hover:text-primary",
+            "transition-colors",
+            "font-label-md",
+            "text-label-md",
+            "flex",
+            "items-center",
+            "gap-xs",
+            "focus:outline-none",
+            "focus:ring-2",
+            "focus:ring-primary",
+            "focus:ring-offset-2",
+            "focus:ring-offset-background"
+          ],
+          "icon": "add",
+          "action": "create",
+          "expectedBehavior": "open create flow or add a new item/state"
+        },
+        {
+          "kind": "button",
+          "label": "Zone B",
+          "classes": [
+            "h-8",
+            "px-md",
+            "rounded-full",
+            "bg-surface-container",
+            "border",
+            "border-outline-variant",
+            "text-on-surface-variant",
+            "hover:border-primary",
+            "hover:text-primary",
+            "transition-colors",
+            "font-label-md",
+            "text-label-md",
+            "flex",
+            "items-center",
+            "gap-xs",
+            "focus:outline-none",
+            "focus:ring-2",
+            "focus:ring-primary",
+            "focus:ring-offset-2",
+            "focus:ring-offset-background"
+          ],
+          "icon": "add",
+          "action": "create",
+          "expectedBehavior": "open create flow or add a new item/state"
+        },
+        {
+          "kind": "button",
+          "label": "Status: Pending",
+          "classes": [
+            "h-8",
+            "px-md",
+            "rounded-full",
+            "bg-surface-container",
+            "border",
+            "border-outline-variant",
+            "text-on-surface-variant",
+            "hover:border-primary",
+            "hover:text-primary",
+            "transition-colors",
+            "font-label-md",
+            "text-label-md",
+            "flex",
+            "items-center",
+            "gap-xs",
+            "focus:outline-none",
+            "focus:ring-2",
+            "focus:ring-primary",
+            "focus:ring-offset-2",
+            "focus:ring-offset-background"
+          ],
+          "icon": "add",
+          "action": "create",
+          "expectedBehavior": "open create flow or add a new item/state"
+        },
+        {
+          "kind": "button",
+          "label": "View Details",
+          "classes": [
+            "h-touch-target",
+            "px-md",
+            "rounded-DEFAULT",
+            "border",
+            "border-outline-variant",
+            "text-on-surface",
+            "font-body-md",
+            "text-body-md",
+            "hover:bg-surface-container-high",
+            "transition-colors",
+            "focus:outline-none",
+            "focus:ring-2",
+            "focus:ring-primary",
+            "opacity-0",
+            "group-hover:opacity-100",
+            "transition-opacity"
+          ],
+          "icon": null,
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "Load More Results",
+          "classes": [
+            "h-touch-target",
+            "px-lg",
+            "rounded-full",
+            "border",
+            "border-outline-variant",
+            "text-on-surface-variant",
+            "font-body-md",
+            "text-body-md",
+            "hover:bg-surface-container-high",
+            "transition-colors",
+            "focus:outline-none",
+            "focus:ring-2",
+            "focus:ring-primary"
+          ],
+          "icon": null,
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "spa",
+          "classes": [],
+          "icon": "spa",
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "Greenhouse Ops Maintenance Console",
+          "classes": [],
+          "icon": null,
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "Tech Admin",
+          "classes": [],
+          "icon": null,
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        }
+      ],
+      "inputs": [
+        {
+          "kind": "input",
+          "type": "text",
+          "label": "Search logs...",
+          "placeholder": "Search logs...",
+          "name": "",
+          "classes": [
+            "w-full",
+            "h-touch-target",
+            "pl-[40px]",
+            "pr-sm",
+            "bg-surface-container",
+            "border",
+            "border-outline-variant",
+            "rounded-lg",
+            "text-on-surface",
+            "font-body-md",
+            "focus:outline-none",
+            "focus:ring-2",
+            "focus:ring-primary",
+            "focus:border-transparent",
+            "placeholder-on-surface-variant"
+          ],
+          "expectedBehavior": "controlled value with onChange; validation if required by PRD"
+        }
+      ],
+      "navLinks": [
+        {
+          "kind": "link",
+          "label": "dashboard",
+          "href": "#",
+          "classes": [
+            "material-symbols-outlined"
+          ],
+          "icon": "dashboard",
+          "action": "navigate",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "Task Board",
+          "href": "#",
+          "classes": [
+            "material-symbols-outlined"
+          ],
+          "icon": "assignment",
+          "action": "navigate",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "Equipment",
+          "href": "#",
+          "classes": [
+            "material-symbols-outlined"
+          ],
+          "icon": "precision_manufacturing",
+          "action": "navigate",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "Logs",
+          "href": "#",
+          "classes": [
+            "material-symbols-outlined",
+            "filled-icon"
+          ],
+          "icon": "database",
+          "action": "navigate",
+          "expectedBehavior": "navigate:#"
+        }
+      ],
+      "cards": [],
+      "icons": [
+        "spa",
+        "add",
+        "dashboard",
+        "assignment",
+        "precision_manufacturing",
+        "database",
+        "search",
+        "sync",
+        "account_circle",
+        "close",
+        "warning",
+        "tag",
+        "location_on",
+        "schedule",
+        "build",
+        "check_circle",
+        "water_drop"
+      ],
+      "images": [
+        {
+          "src": "https://lh3.googleusercontent.com/aida-public/AB6AXuA29zLB6plrbaTYbPplP2V-FrhBjVRFVHTlZR5102Ln5ZEmXRz61ysJYO0PYjyr3shLVlNzKxFyRfmWlF7Pb7V8sNWIRLv9G_tOjrvOloAigr_bJj8G3rA56Y2DlPJiluWWaWnY32yjX3cme4W6vY",
+          "alt": "User profile"
+        }
+      ],
+      "cssVars": {},
+      "colorPalette": {
+        "error": "#ffb4ab",
+        "inverse-surface": "#e1e2ec",
+        "outline-variant": "#424754",
+        "primary-fixed-dim": "#adc6ff",
+        "on-background": "#e1e2ec",
+        "surface-container": "#1d2027",
+        "surface-container-lowest": "#0b0e15",
+        "on-primary-container": "#00285d",
+        "primary-fixed": "#d8e2ff",
+        "tertiary-container": "#df7412",
+        "primary-container": "#4d8eff",
+        "surface": "#10131a",
+        "surface-container-high": "#272a31",
+        "on-secondary-fixed": "#0d1c2d",
+        "error-container": "#93000a",
+        "on-tertiary-container": "#461f00",
+        "outline": "#8c909f",
+        "on-error": "#690005",
+        "secondary-fixed-dim": "#b9c8de",
+        "on-primary-fixed-variant": "#004395",
+        "tertiary": "#ffb786",
+        "surface-bright": "#363941",
+        "surface-container-low": "#191b23",
+        "on-tertiary-fixed": "#311400",
+        "secondary": "#b9c8de",
+        "surface-tint": "#adc6ff",
+        "secondary-fixed": "#d4e4fa",
+        "background": "#10131a",
+        "on-secondary": "#233143",
+        "on-secondary-fixed-variant": "#39485a",
+        "surface-variant": "#32353c",
+        "on-surface-variant": "#c2c6d6",
+        "on-error-container": "#ffdad6",
+        "secondary-container": "#39485a",
+        "on-surface": "#e1e2ec",
+        "tertiary-fixed": "#ffdcc6",
+        "inverse-primary": "#005ac2",
+        "surface-dim": "#10131a",
+        "inverse-on-surface": "#2e3038",
+        "on-primary": "#002e6a",
+        "on-tertiary": "#502400",
+        "primary": "#adc6ff",
+        "surface-container-highest": "#32353c",
+        "on-secondary-container": "#a7b6cc",
+        "on-primary-fixed": "#001a42",
+        "tertiary-fixed-dim": "#ffb786",
+        "on-tertiary-fixed-variant": "#723600"
+      },
+      "fonts": [
+        "Inter",
+        "Material Symbols Outlined"
+      ],
+      "layoutHints": {
+        "flexDirection": "col"
+      },
+      "behaviorContract": [
+        {
+          "kind": "link",
+          "label": "dashboard",
+          "icon": "dashboard",
+          "route": "#",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "Task Board",
+          "icon": "assignment",
+          "route": "#",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "Equipment",
+          "icon": "precision_manufacturing",
+          "route": "#",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "Logs",
+          "icon": "database",
+          "route": "#",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "button",
+          "label": "Create Task",
+          "icon": "add",
+          "action": "create",
+          "expectedBehavior": "open create flow or add a new item/state"
+        },
+        {
+          "kind": "button",
+          "label": "Sync",
+          "icon": "sync",
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "Account",
+          "icon": "account_circle",
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "Last 7 days",
+          "icon": "close",
+          "action": "dismiss",
+          "expectedBehavior": "close dialog/panel or return to previous state"
+        },
+        {
+          "kind": "button",
+          "label": "High Priority",
+          "icon": "add",
+          "action": "create",
+          "expectedBehavior": "open create flow or add a new item/state"
+        },
+        {
+          "kind": "button",
+          "label": "Zone B",
+          "icon": "add",
+          "action": "create",
+          "expectedBehavior": "open create flow or add a new item/state"
+        },
+        {
+          "kind": "button",
+          "label": "Status: Pending",
+          "icon": "add",
+          "action": "create",
+          "expectedBehavior": "open create flow or add a new item/state"
+        },
+        {
+          "kind": "button",
+          "label": "View Details",
+          "icon": null,
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "Load More Results",
+          "icon": null,
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "spa",
+          "icon": "spa",
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "Greenhouse Ops Maintenance Console",
+          "icon": null,
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "Tech Admin",
+          "icon": null,
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "input",
+          "label": "Search logs...",
+          "type": "text",
+          "placeholder": "Search logs...",
+          "expectedBehavior": "controlled value with onChange; validation if required by PRD"
+        }
+      ],
+      "tabBar": [
+        {
+          "kind": "button",
+          "label": "spa",
+          "icon": "spa",
+          "active": true
+        },
+        {
+          "kind": "button",
+          "label": "Greenhouse Ops Maintenance Console",
+          "icon": null,
+          "active": true
+        },
+        {
+          "kind": "button",
+          "label": "Create Task",
+          "icon": "add",
+          "active": true
+        },
+        {
+          "kind": "link",
+          "label": "dashboard",
+          "icon": "dashboard",
+          "route": "#",
+          "active": false
+        },
+        {
+          "kind": "link",
+          "label": "Task Board",
+          "icon": "assignment",
+          "route": "#",
+          "active": false
+        },
+        {
+          "kind": "link",
+          "label": "Equipment",
+          "icon": "precision_manufacturing",
+          "route": "#",
+          "active": false
+        },
+        {
+          "kind": "link",
+          "label": "Logs",
+          "icon": "database",
+          "route": "#",
+          "active": true
+        },
+        {
+          "kind": "button",
+          "label": "Tech Admin",
+          "icon": null,
+          "active": false
+        }
+      ],
+      "title": "Filtered Overview"
+    },
+    "ec39ccca12b54b468545e616fa2311d8": {
+      "screenId": "ec39ccca12b54b468545e616fa2311d8",
+      "materialSymbolsRequired": true,
+      "sections": [
+        {
+          "tag": "header",
+          "layout": "flex-row",
+          "classes": [
+            "fixed",
+            "top-0",
+            "right-0",
+            "w-[calc(100%-16rem)]",
+            "bg-surface",
+            "dark:bg-surface-dim",
+            "flex",
+            "justify-between",
+            "items-center",
+            "h-touch-target"
+          ],
+          "childCount": 3
+        },
+        {
+          "tag": "nav",
+          "layout": "flex-col",
+          "classes": [
+            "fixed",
+            "left-0",
+            "top-0",
+            "h-full",
+            "w-64",
+            "bg-surface-container",
+            "dark:bg-surface-container",
+            "flex",
+            "flex-col",
+            "py-md"
+          ],
+          "childCount": 6
+        },
+        {
+          "tag": "main",
+          "layout": "block",
+          "classes": [
+            "ml-64",
+            "mt-touch-target",
+            "p-gutter",
+            "pb-xl",
+            "min-h-[calc(100vh-44px)]"
+          ],
+          "childCount": 18
+        }
+      ],
+      "buttons": [
+        {
+          "kind": "button",
+          "label": "sync",
+          "classes": [
+            "h-touch-target",
+            "w-touch-target",
+            "flex",
+            "items-center",
+            "justify-center",
+            "text-on-surface-variant",
+            "hover:text-primary",
+            "transition-all",
+            "hover:bg-surface-container-high",
+            "rounded-full"
+          ],
+          "icon": "sync",
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "account_circle",
+          "classes": [
+            "h-touch-target",
+            "w-touch-target",
+            "flex",
+            "items-center",
+            "justify-center",
+            "text-on-surface-variant",
+            "hover:text-primary",
+            "transition-all",
+            "hover:bg-surface-container-high",
+            "rounded-full"
+          ],
+          "icon": "account_circle",
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "Create Task",
+          "classes": [
+            "w-full",
+            "bg-primary",
+            "text-on-primary",
+            "font-label-md",
+            "text-label-md",
+            "h-touch-target",
+            "rounded-DEFAULT",
+            "mb-xl",
+            "flex",
+            "items-center",
+            "justify-center",
+            "hover:bg-primary-fixed",
+            "transition-colors"
+          ],
+          "icon": "add",
+          "action": "create",
+          "expectedBehavior": "open create flow or add a new item/state"
+        },
+        {
+          "kind": "button",
+          "label": "Filter",
+          "classes": [
+            "h-touch-target",
+            "px-md",
+            "flex",
+            "items-center",
+            "justify-center",
+            "bg-surface-container-high",
+            "border",
+            "border-outline-variant",
+            "rounded-DEFAULT",
+            "text-on-surface",
+            "font-label-md",
+            "text-label-md",
+            "hover:bg-surface-variant",
+            "transition-colors"
+          ],
+          "icon": "filter_list",
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "Export CSV",
+          "classes": [
+            "h-touch-target",
+            "px-md",
+            "flex",
+            "items-center",
+            "justify-center",
+            "border",
+            "border-outline-variant",
+            "rounded-DEFAULT",
+            "text-on-surface",
+            "font-label-md",
+            "text-label-md",
+            "hover:bg-surface-container-high",
+            "transition-colors"
+          ],
+          "icon": "download",
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "chevron_left",
+          "classes": [
+            "h-8",
+            "w-8",
+            "flex",
+            "items-center",
+            "justify-center",
+            "rounded-DEFAULT",
+            "text-on-surface-variant",
+            "hover:bg-surface-container-high",
+            "transition-colors",
+            "disabled:opacity-50"
+          ],
+          "icon": "chevron_left",
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "1",
+          "classes": [
+            "h-8",
+            "w-8",
+            "flex",
+            "items-center",
+            "justify-center",
+            "rounded-DEFAULT",
+            "bg-surface-container-high",
+            "text-primary",
+            "font-label-md",
+            "text-label-md"
+          ],
+          "icon": null,
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "2",
+          "classes": [
+            "h-8",
+            "w-8",
+            "flex",
+            "items-center",
+            "justify-center",
+            "rounded-DEFAULT",
+            "text-on-surface",
+            "hover:bg-surface-container-high",
+            "transition-colors",
+            "font-label-md",
+            "text-label-md"
+          ],
+          "icon": null,
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "3",
+          "classes": [
+            "h-8",
+            "w-8",
+            "flex",
+            "items-center",
+            "justify-center",
+            "rounded-DEFAULT",
+            "text-on-surface",
+            "hover:bg-surface-container-high",
+            "transition-colors",
+            "font-label-md",
+            "text-label-md"
+          ],
+          "icon": null,
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "29",
+          "classes": [
+            "h-8",
+            "w-8",
+            "flex",
+            "items-center",
+            "justify-center",
+            "rounded-DEFAULT",
+            "text-on-surface",
+            "hover:bg-surface-container-high",
+            "transition-colors",
+            "font-label-md",
+            "text-label-md"
+          ],
+          "icon": null,
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "chevron_right",
+          "classes": [
+            "h-8",
+            "w-8",
+            "flex",
+            "items-center",
+            "justify-center",
+            "rounded-DEFAULT",
+            "text-on-surface",
+            "hover:bg-surface-container-high",
+            "transition-colors"
+          ],
+          "icon": "chevron_right",
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "Greenhouse Ops Maintenance Console",
+          "classes": [],
+          "icon": null,
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        }
+      ],
+      "inputs": [
+        {
+          "kind": "input",
+          "type": "text",
+          "label": "Search logs...",
+          "placeholder": "Search logs...",
+          "name": "",
+          "classes": [
+            "bg-surface-container-high",
+            "border",
+            "border-outline-variant",
+            "text-on-surface",
+            "placeholder-on-surface-variant",
+            "rounded-DEFAULT",
+            "pl-xl",
+            "pr-sm",
+            "py-xs",
+            "focus:outline-none",
+            "focus:border-primary",
+            "focus:ring-1",
+            "focus:ring-primary",
+            "h-touch-target",
+            "w-64",
+            "font-body-md",
+            "text-body-md"
+          ],
+          "expectedBehavior": "controlled value with onChange; validation if required by PRD"
+        }
+      ],
+      "navLinks": [
+        {
+          "kind": "link",
+          "label": "dashboard",
+          "href": "#",
+          "classes": [
+            "material-symbols-outlined"
+          ],
+          "icon": "dashboard",
+          "action": "navigate",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "Task Board",
+          "href": "#",
+          "classes": [
+            "material-symbols-outlined"
+          ],
+          "icon": "assignment",
+          "action": "navigate",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "Equipment",
+          "href": "#",
+          "classes": [
+            "material-symbols-outlined"
+          ],
+          "icon": "precision_manufacturing",
+          "action": "navigate",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "Logs",
+          "href": "#",
+          "classes": [
+            "material-symbols-outlined"
+          ],
+          "icon": "database",
+          "action": "navigate",
+          "expectedBehavior": "navigate:#"
+        }
+      ],
+      "cards": [],
+      "icons": [
+        "search",
+        "sync",
+        "account_circle",
+        "add",
+        "dashboard",
+        "assignment",
+        "precision_manufacturing",
+        "database",
+        "filter_list",
+        "calendar_today",
+        "download",
+        "chevron_left",
+        "chevron_right"
+      ],
+      "images": [
+        {
+          "src": "https://lh3.googleusercontent.com/aida-public/AB6AXuDFOIUqCeM9vpswPjXivqc6XYVymoLt8y8BONuHaG39-V6xpZXk0UzNZkU2XGlfKPs1NdYRaHmK426YnOdpzwRPM8gcAhEdnwkJLItg_8pQcvd0sUsykDr5vnpKK6zy23LP2ab_L3v1OxP2hW5GfA",
+          "alt": "User profile"
+        }
+      ],
+      "cssVars": {},
+      "colorPalette": {
+        "error": "#ffb4ab",
+        "inverse-surface": "#e1e2ec",
+        "outline-variant": "#424754",
+        "primary-fixed-dim": "#adc6ff",
+        "on-background": "#e1e2ec",
+        "surface-container": "#1d2027",
+        "surface-container-lowest": "#0b0e15",
+        "on-primary-container": "#00285d",
+        "primary-fixed": "#d8e2ff",
+        "tertiary-container": "#df7412",
+        "primary-container": "#4d8eff",
+        "surface": "#10131a",
+        "surface-container-high": "#272a31",
+        "on-secondary-fixed": "#0d1c2d",
+        "error-container": "#93000a",
+        "on-tertiary-container": "#461f00",
+        "outline": "#8c909f",
+        "on-error": "#690005",
+        "secondary-fixed-dim": "#b9c8de",
+        "on-primary-fixed-variant": "#004395",
+        "tertiary": "#ffb786",
+        "surface-bright": "#363941",
+        "surface-container-low": "#191b23",
+        "on-tertiary-fixed": "#311400",
+        "secondary": "#b9c8de",
+        "surface-tint": "#adc6ff",
+        "secondary-fixed": "#d4e4fa",
+        "background": "#10131a",
+        "on-secondary": "#233143",
+        "on-secondary-fixed-variant": "#39485a",
+        "surface-variant": "#32353c",
+        "on-surface-variant": "#c2c6d6",
+        "on-error-container": "#ffdad6",
+        "secondary-container": "#39485a",
+        "on-surface": "#e1e2ec",
+        "tertiary-fixed": "#ffdcc6",
+        "inverse-primary": "#005ac2",
+        "surface-dim": "#10131a",
+        "inverse-on-surface": "#2e3038",
+        "on-primary": "#002e6a",
+        "on-tertiary": "#502400",
+        "primary": "#adc6ff",
+        "surface-container-highest": "#32353c",
+        "on-secondary-container": "#a7b6cc",
+        "on-primary-fixed": "#001a42",
+        "tertiary-fixed-dim": "#ffb786",
+        "on-tertiary-fixed-variant": "#723600"
+      },
+      "fonts": [
+        "Inter",
+        "Material Symbols Outlined"
+      ],
+      "layoutHints": {
+        "flexDirection": "col"
+      },
+      "behaviorContract": [
+        {
+          "kind": "link",
+          "label": "dashboard",
+          "icon": "dashboard",
+          "route": "#",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "Task Board",
+          "icon": "assignment",
+          "route": "#",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "Equipment",
+          "icon": "precision_manufacturing",
+          "route": "#",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "Logs",
+          "icon": "database",
+          "route": "#",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "button",
+          "label": "sync",
+          "icon": "sync",
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "account_circle",
+          "icon": "account_circle",
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "Create Task",
+          "icon": "add",
+          "action": "create",
+          "expectedBehavior": "open create flow or add a new item/state"
+        },
+        {
+          "kind": "button",
+          "label": "Filter",
+          "icon": "filter_list",
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "Export CSV",
+          "icon": "download",
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "chevron_left",
+          "icon": "chevron_left",
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "1",
+          "icon": null,
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "2",
+          "icon": null,
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "3",
+          "icon": null,
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "29",
+          "icon": null,
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "chevron_right",
+          "icon": "chevron_right",
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "Greenhouse Ops Maintenance Console",
+          "icon": null,
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "input",
+          "label": "Search logs...",
+          "type": "text",
+          "placeholder": "Search logs...",
+          "expectedBehavior": "controlled value with onChange; validation if required by PRD"
+        }
+      ],
+      "tabBar": [
+        {
+          "kind": "button",
+          "label": "Greenhouse Ops Maintenance Console",
+          "icon": null,
+          "active": true
+        },
+        {
+          "kind": "button",
+          "label": "Create Task",
+          "icon": "add",
+          "active": true
+        },
+        {
+          "kind": "link",
+          "label": "dashboard",
+          "icon": "dashboard",
+          "route": "#",
+          "active": false
+        },
+        {
+          "kind": "link",
+          "label": "Task Board",
+          "icon": "assignment",
+          "route": "#",
+          "active": false
+        },
+        {
+          "kind": "link",
+          "label": "Equipment",
+          "icon": "precision_manufacturing",
+          "route": "#",
+          "active": false
+        },
+        {
+          "kind": "link",
+          "label": "Logs",
+          "icon": "database",
+          "route": "#",
+          "active": true
+        }
+      ],
+      "title": "Maintenance Log"
+    }
+  }
+}
