@@ -1,0 +1,83 @@
+[
+  {
+    "screenId": "1cd5bf7dc5814c6eb502b3617dc25477",
+    "title": "Equipment Status",
+    "componentName": "EquipmentStatus",
+    "file": "src/screens/EquipmentStatus.tsx",
+    "buttons": 7,
+    "inputs": 1,
+    "links": 4
+  },
+  {
+    "screenId": "ec39ccca12b54b468545e616fa2311d8",
+    "title": "Maintenance Log",
+    "componentName": "MaintenanceLog",
+    "file": "src/screens/MaintenanceLog.tsx",
+    "buttons": 11,
+    "inputs": 1,
+    "links": 4
+  },
+  {
+    "screenId": "196b9bdfb93a4e94a3902d8f815b79e7",
+    "title": "Profile Panel",
+    "componentName": "ProfilePanel",
+    "file": "src/screens/ProfilePanel.tsx",
+    "buttons": 10,
+    "inputs": 1,
+    "links": 4
+  },
+  {
+    "screenId": "db17c4057c334dfda3216e110b00f722",
+    "title": "Filtered Overview",
+    "componentName": "FilteredOverview",
+    "file": "src/screens/FilteredOverview.tsx",
+    "buttons": 12,
+    "inputs": 1,
+    "links": 4
+  },
+  {
+    "screenId": "b6c2a851fa3b40449f4a606d3cb8b5a5",
+    "title": "Settings",
+    "componentName": "Settings",
+    "file": "src/screens/Settings.tsx",
+    "buttons": 6,
+    "inputs": 2,
+    "links": 5
+  },
+  {
+    "screenId": "00ad43aaa8cb40098e866fbb396f7357",
+    "title": "Dashboard",
+    "componentName": "Dashboard",
+    "file": "src/screens/Dashboard.tsx",
+    "buttons": 6,
+    "inputs": 0,
+    "links": 4
+  },
+  {
+    "screenId": "804ad20c9b26420b8a6fad2ee5fe7ecc",
+    "title": "Storage Error State",
+    "componentName": "StorageErrorState",
+    "file": "src/screens/StorageErrorState.tsx",
+    "buttons": 5,
+    "inputs": 0,
+    "links": 4
+  },
+  {
+    "screenId": "cd8326dabc734e43957ba2919e4a21bf",
+    "title": "Task Board",
+    "componentName": "TaskBoard",
+    "file": "src/screens/TaskBoard.tsx",
+    "buttons": 5,
+    "inputs": 1,
+    "links": 4
+  },
+  {
+    "screenId": "6abfcfd24d974af28274f478df012ca5",
+    "title": "Empty State",
+    "componentName": "EmptyState",
+    "file": "src/screens/EmptyState.tsx",
+    "buttons": 4,
+    "inputs": 0,
+    "links": 4
+  }
+]
